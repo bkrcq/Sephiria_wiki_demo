@@ -31,7 +31,7 @@
 - Create: `content/ru/home.mdx`, `content/ru/weapons.mdx`, `content/ru/grimoire.mdx`
 
 - [ ] Define locale metadata, localized navigation labels, SEO title/description/keywords, official links, and the two researched `暂无` redemption-code rows.
-- [ ] Keep factual copy limited to `Sephiria网站开发信息.md`; mark unsupported article details as “待确认”.
+- [ ] Keep factual copy limited to `Sephiria网站开发信息.md`; mark unsupported article details as “unconfirmed”.
 - [ ] Use MDX sections for page bodies so content is editable without changing UI components.
 
 ### Task 3: Implement shared chrome and page templates

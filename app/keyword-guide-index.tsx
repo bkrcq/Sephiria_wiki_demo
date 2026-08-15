@@ -15,7 +15,7 @@ export function KeywordGuideIndex({ locale }: { locale: Locale }) {
       <div className="article-hero">
         <div className="eyebrow">Keyword Navigation</div>
         <h1 className="display-title"><span>Sephiria Guides</span></h1>
-        <p className="hero-copy">One researched page for every keyword in keywords.json. Confirmed facts are separated from details marked 待确认.</p>
+        <p className="hero-copy">One researched page for every keyword in keywords.json. Confirmed facts are separated from details marked unconfirmed.</p>
       </div>
       {grouped.map(([category, pages]) => <section className="keyword-group" key={category}>
         <SectionHeading>{category}</SectionHeading>

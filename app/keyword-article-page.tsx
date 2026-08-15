@@ -23,7 +23,7 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
         <article className="article-content"><Content /></article>
         <aside className="article-sidebar">
           <h2>Confirmed sources</h2>
-          <p>This page uses only the supplied Sephiria research. Unsupported details are marked 待确认.</p>
+          <p>This page uses only the supplied Sephiria research. Unsupported details are marked unconfirmed.</p>
           <ul className="source-list">
             <li><a href={officialLinks.website} target="_blank" rel="noreferrer">Official website</a></li>
             <li><a href={officialLinks.steam} target="_blank" rel="noreferrer">Steam store</a></li>

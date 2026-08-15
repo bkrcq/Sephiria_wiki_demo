@@ -17,7 +17,7 @@ for (const keyword of keywords) {
   const h2 = (mdx.match(/^## /gm) || []).length
   if (words < 1100 || words > 1350) failures.push(`word count ${words}: ${keyword}`)
   if (h2 < 8) failures.push(`H2 count ${h2}: ${keyword}`)
-  if (!mdx.includes('待确认')) failures.push(`missing 待确认: ${keyword}`)
+  if (!mdx.includes('unconfirmed')) failures.push(`missing unconfirmed: ${keyword}`)
   if (/redemption code/i.test(mdx) && !mdx.includes('暂无')) failures.push(`codes missing 暂无: ${keyword}`)
   const paragraphs = mdx.split(/\n\s*\n/).filter((p) => !p.startsWith('## '))
   for (const paragraph of paragraphs) {
