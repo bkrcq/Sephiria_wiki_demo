@@ -1,0 +1,1 @@
+﻿export default function NotFound() { return <main style={{ minHeight: '100vh', display: 'grid', placeItems: 'center', background: 'hsl(218 34% 9%)', color: 'hsl(42 43% 95%)', fontFamily: 'Georgia, serif' }}><h1>Page not found</h1></main> }

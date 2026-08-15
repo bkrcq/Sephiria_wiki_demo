@@ -1,0 +1,52 @@
+{
+  "categories": [
+    {
+      "category": "guide",
+      "keywords": ["sephiria guide", "sephiria wiki"]
+    },
+    {
+      "category": "weapons",
+      "keywords": ["sephiria weapons", "sephiria grimoire", "sephiria tier list"]
+    },
+    {
+      "category": "builds",
+      "keywords": ["sephiria builds", "sephiria destiny inscription"]
+    },
+    {
+      "category": "coop",
+      "keywords": ["sephiria coop"]
+    },
+    {
+      "category": "secret rooms",
+      "keywords": ["sephiria secret rooms"]
+    },
+    {
+      "category": "characters",
+      "keywords": ["sephiria elru"]
+    },
+    {
+      "category": "costumes",
+      "keywords": ["sephiria costumes"]
+    },
+    {
+      "category": "mods",
+      "keywords": ["sephiria mods"]
+    },
+    {
+      "category": "platforms",
+      "keywords": ["sephiria switch"]
+    },
+    {
+      "category": "community",
+      "keywords": ["sephiria reddit"]
+    },
+    {
+      "category": "review",
+      "keywords": ["sephiria review"]
+    },
+    {
+      "category": "updates",
+      "keywords": ["sephiria 1.0"]
+    }
+  ]
+}
