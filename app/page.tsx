@@ -1,3 +1,7 @@
 ﻿import HomePage from './home-page'
-export const metadata = { title: 'Sephiria Wiki — Weapons, Builds & Artifacts' }
+import { seoByLocale } from '@/lib/content'
+import { pageMetadata } from '@/lib/seo'
+
+export const metadata = pageMetadata({ ...seoByLocale.en, path: '/', locale: 'en' })
+
 export default function Page() { return <HomePage /> }

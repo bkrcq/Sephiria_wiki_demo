@@ -133,3 +133,11 @@ a { color: inherit; text-decoration: none; }
 .keyword-grid .wiki-card { min-height: 230px; }
 .keyword-grid .card-title { text-transform: none; }
 @media (max-width: 560px) { .keyword-answer { padding: 15px; } .keyword-group { margin-top: 46px; } }
+
+.breadcrumbs { max-width: 1120px; margin: 0 auto 28px; }
+.breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; color: var(--muted-2); font-size: 12px; }
+.breadcrumbs li { display: inline-flex; align-items: center; gap: 8px; }
+.breadcrumbs li:not(:last-child)::after { content: '/'; color: hsl(42 48% 38% / .72); }
+.breadcrumbs a { color: var(--muted); }
+.breadcrumbs a:hover { color: var(--nav-light); }
+.research-note { margin: 0 0 34px; padding: 15px 17px; border-left: 3px solid var(--nav-light); background: hsl(174 68% 48% / .08); }
