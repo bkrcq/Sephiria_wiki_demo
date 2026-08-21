@@ -1,3 +1,9 @@
-﻿import { KeywordGuideIndex } from '@/app/keyword-guide-index'
-export const metadata = { title: 'Sephiria Guides — Researched Keyword Pages', description: 'Browse Sephiria guide pages built from confirmed research, with one page per keyword and unsupported details clearly marked unconfirmed.' }
+﻿import type { Metadata } from 'next'
+import { KeywordGuideIndex } from '@/app/keyword-guide-index'
+
+export const metadata: Metadata = {
+  title: 'Sephiria Guides: Verified Topics & Research Status',
+  description: 'Browse Sephiria guide topics and see which weapon, build, co-op, update, and community details have verified sources.',
+  alternates: { canonical: '/guides', languages: { en: '/guides', 'x-default': '/guides' } },
+}
 export default function Page() { return <KeywordGuideIndex locale="en" /> }

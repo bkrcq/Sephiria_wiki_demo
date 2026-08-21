@@ -9,6 +9,17 @@ export type KeywordPage = {
   answer: string
 }
 
+const lowValueKeywordSlugs = new Set([
+  'sephiria-costumes',
+  'sephiria-destiny-inscription',
+  'sephiria-elru',
+  'sephiria-mods',
+  'sephiria-reddit',
+  'sephiria-secret-rooms',
+  'sephiria-switch',
+  'sephiria-tier-list',
+])
+
 export const keywordPages: KeywordPage[] = [
   {
     "keyword": "sephiria guide",
@@ -140,10 +151,21 @@ export const keywordPages: KeywordPage[] = [
   }
 ]
 
+
+export function isKeywordIndexable(slug: string) {
+  return !lowValueKeywordSlugs.has(slug)
+}
+
 export function getKeywordPage(slug: string) {
   return keywordPages.find((page) => page.slug === slug)
 }
 
 export function keywordMetadata(page: KeywordPage): Metadata {
-  return { title: page.title, description: page.description, keywords: [page.keyword, 'Sephiria', 'wiki'] }
+  return {
+    title: page.title,
+    description: page.description,
+    keywords: [page.keyword, 'Sephiria', 'wiki'],
+    alternates: { canonical: `/guides/${page.slug}`, languages: { en: `/guides/${page.slug}`, 'x-default': `/guides/${page.slug}` } },
+    robots: isKeywordIndexable(page.slug) ? { index: true, follow: true } : { index: false, follow: true },
+  }
 }

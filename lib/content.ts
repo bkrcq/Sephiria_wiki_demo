@@ -1,4 +1,4 @@
-﻿import type { Locale } from './locales'
+import type { Locale } from './locales'
 
 export type CodeRow = { code: string; reward: string }
 
@@ -38,7 +38,7 @@ export type Copy = {
     eyebrow: string
     title: string
     description: string
-    heroStats: string[]
+    heroStats: { value: string; label: string }[]
     primaryCta: string
     secondaryCta: string
     tertiaryCta: string
@@ -107,7 +107,7 @@ const english: Copy = {
   nav: { home: 'Home', weapons: 'Weapons', builds: 'Builds', artifacts: 'Artifacts', bosses: 'Bosses', coop: 'Co-op', guides: 'Guides' },
   utility: { update: 'Latest Update', roadmap: 'Roadmap', codes: 'Codes', community: 'Community', faq: 'FAQ' }, steam: 'Play on Steam', languageLabel: 'Languages',
   home: {
-    eyebrow: 'Fan-Made Community Wiki', title: 'Master Every Run in Sephiria', description: 'Climb a collapsing tower as a rabbit hero in a fast-paced top-down action roguelite. Combine weapons, artifacts, tablets, and animal synergies to create powerful builds, defeat bosses, and survive alone or with up to four players.', heroStats: ['Full Release · Jul 31, 2026', 'Updated · Aug 7, 2026', '93% Positive Recent Reviews', 'Up to 4-Player Co-op', '300 Artifacts'], primaryCta: 'Start Beginner Guide', secondaryCta: 'Explore Weapon Builds', tertiaryCta: 'Read Patch Notes', videoLabel: 'Official media',
+    eyebrow: 'Fan-Made Community Wiki', title: 'Master Every Run in Sephiria', description: 'Climb a collapsing tower as a rabbit hero in a fast-paced top-down action roguelite. Combine weapons, artifacts, tablets, and animal synergies to create powerful builds, defeat bosses, and survive alone or with up to four players.', heroStats: [{ value: 'Jul 31', label: 'Full release · 2026' }, { value: 'Aug 21', label: 'Last verified · 2026' }, { value: '4', label: 'Online co-op players' }, { value: '300', label: 'Confirmed artifacts' }, { value: '200+', label: 'Weapon upgrades' }], primaryCta: 'Start Beginner Guide', secondaryCta: 'Explore Weapon Builds', tertiaryCta: 'Read Patch Notes', videoLabel: 'Official media',
     startEyebrow: 'Start Here', startTitle: 'Your Sephiria Journey', cards: [
       { number: '1', title: 'Beginner Guide', description: 'Learn the essential controls, room priorities, early upgrades, healing options, and survival habits needed for your first successful tower runs.', href: '/weapons' },
       { number: '2', title: 'Best Early-Game Builds', description: 'Discover reliable weapon, artifact, and tablet combinations that become effective quickly and help new players clear the opening chapters.', href: '/weapons/grimoire' },
