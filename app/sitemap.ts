@@ -1,8 +1,8 @@
-﻿import type { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
 import { isKeywordIndexable, keywordPages } from '@/lib/keyword-pages'
 import { LAST_VERIFIED, SITE_URL } from '@/app/seo'
 
-const staticPaths = ['', '/weapons', '/weapons/grimoire', '/guides']
+const staticPaths = ['', '/weapons', '/weapons/grimoire', '/artifacts', '/bosses', '/coop', '/guides']
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
