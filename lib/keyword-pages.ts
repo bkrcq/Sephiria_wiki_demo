@@ -153,6 +153,94 @@ export const keywordPages: KeywordPage[] = [
     "title": "Sephiria 1.0: Release Date & Update Facts",
     "description": "Sephiria 1.0 facts from supplied research: the brief records a full release on July 31, 2026 and an August 7, 2026 update; the changelog is unconfirmed.",
     "answer": "The supplied brief records Full Release: Jul 31, 2026, with Latest Update: Aug 7, 2026; a full 1.0 changelog is unconfirmed."
+  },
+  {
+    "keyword": "sephiria roadmap",
+    "slug": "sephiria-roadmap",
+    "category": "guide",
+    "title": "Sephiria Roadmap: Updates, Plans & Facts",
+    "description": "Sephiria roadmap coverage from research: review release and update dates, official channels, and roadmap details that remain unconfirmed today.",
+    "answer": "The supplied research records release and update dates but does not include a confirmed public Sephiria roadmap or full 1.0 changelog."
+  },
+  {
+    "keyword": "sephiria puzzle",
+    "slug": "sephiria-puzzle",
+    "category": "guide",
+    "title": "Sephiria Puzzle Guide: Facts & Unknowns for Players",
+    "description": "Sephiria puzzle coverage from research: separate confirmed tower-run systems from puzzle types, solutions, locations, and rewards that remain unconfirmed today.",
+    "answer": "The supplied research does not confirm a Sephiria puzzle list, solution guide, puzzle locations, or puzzle rewards."
+  },
+  {
+    "keyword": "sephiria how many chapters",
+    "slug": "sephiria-how-many-chapters",
+    "category": "guide",
+    "title": "Sephiria How Many Chapters? Confirmed Count",
+    "description": "Sephiria how many chapters has a direct research answer: the brief records six chapters, while names, order, bosses, and unlock details remain unconfirmed.",
+    "answer": "The supplied research records 6 chapters in Sephiria, but it does not provide a verified chapter list, order, or unlock guide."
+  },
+  {
+    "keyword": "sephiria secrets",
+    "slug": "sephiria-secrets",
+    "category": "guide",
+    "title": "Sephiria Secrets: Confirmed Facts & Unknowns",
+    "description": "Sephiria secrets coverage from research: understand the run-based game while secret rooms, hidden items, triggers, and reward routes remain unconfirmed.",
+    "answer": "The supplied research confirms exploration and random discoveries but does not document a verified list of Sephiria secrets."
+  },
+  {
+    "keyword": "sephiria upgrade tree",
+    "slug": "sephiria-upgrade-tree",
+    "category": "weapons",
+    "title": "Sephiria Upgrade Tree: Branches & Facts Guide",
+    "description": "Sephiria upgrade tree coverage from research: six weapon branches and 200+ upgrades are confirmed, while nodes, costs, and routes remain unconfirmed today.",
+    "answer": "The supplied research confirms 6 weapon branches and more than 200 upgrades, but not a complete Sephiria upgrade tree."
+  },
+  {
+    "keyword": "sephiria best weapon",
+    "slug": "sephiria-best-weapon",
+    "category": "weapons",
+    "title": "Sephiria Best Weapon: Confirmed Facts Guide",
+    "description": "Sephiria best weapon guidance from research: compare the confirmed weapon system and build factors without inventing a tier list or strongest choice today.",
+    "answer": "No single best Sephiria weapon is verified by the supplied research; it confirms six branches and more than 200 upgrades."
+  },
+  {
+    "keyword": "sephira weapons",
+    "slug": "sephira-weapons",
+    "category": "weapons",
+    "title": "Sephira Weapons: Search Variant & Facts Guide",
+    "description": "Sephira weapons is a search variant for Sephiria weapons; this page covers the confirmed scope while names, effects, and rankings remain unconfirmed today.",
+    "answer": "The supplied research confirms Sephiria weapon systems, even when the search is written as ?sephira weapons,? but not a complete weapon catalogue."
+  },
+  {
+    "keyword": "sephiria artifact",
+    "slug": "sephiria-artifact",
+    "category": "weapons",
+    "title": "Sephiria Artifact Guide: Count & Facts Guide",
+    "description": "Sephiria artifact coverage from research: 300 artifacts are recorded, while names, effects, rarity, routes, and best combinations remain unconfirmed today.",
+    "answer": "The supplied research records 300 artifacts in Sephiria but does not provide a verified artifact catalogue or tier list."
+  },
+  {
+    "keyword": "aiba sephiria",
+    "slug": "aiba-sephiria",
+    "category": "characters",
+    "title": "Aiba Sephiria: Character Facts & Status Guide",
+    "description": "Aiba Sephiria coverage from research: see what is confirmed about the game and which character identity, role, and story details remain unconfirmed today.",
+    "answer": "The supplied research does not confirm an Aiba Sephiria profile, role, abilities, or story details."
+  },
+  {
+    "keyword": "sephiria all characters",
+    "slug": "sephiria-all-characters",
+    "category": "characters",
+    "title": "Sephiria All Characters: Roster Status Guide",
+    "description": "Sephiria all characters coverage from research: review the player premise while character names, roster size, roles, and unlocks remain unconfirmed today.",
+    "answer": "The supplied research does not provide a complete, verified Sephiria character roster."
+  },
+  {
+    "keyword": "sephiria discord",
+    "slug": "sephiria-discord",
+    "category": "community",
+    "title": "Sephiria Discord: Official Community Entry",
+    "description": "Sephiria Discord guidance from research: use the pinned Steam discussion as the stable entry while invite links, channels, and server details stay unconfirmed.",
+    "answer": "The supplied research points to a developer-pinned Steam discussion as the stable Discord entry, but does not verify server channels or invite details."
   }
 ]
 

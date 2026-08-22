@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import { officialLinks } from '@/lib/content'
 import { localeNames, localePath, type Locale } from '@/lib/locales'
 import type { Copy } from '@/lib/content'
@@ -8,7 +8,7 @@ export function WikiHeader({ locale, copy }: { locale: Locale; copy: Copy }) {
   const mainNav = [
     ['/weapons', copy.nav.weapons],
     ['/weapons/grimoire', copy.nav.builds],
-    ...(locale === 'en' ? [['/artifacts', copy.nav.artifacts], ['/bosses', copy.nav.bosses], ['/coop', copy.nav.coop]] : []),
+    ...(locale === 'en' ? [['/artifacts', copy.nav.artifacts], ['/bosses', copy.nav.bosses], ['/coop', copy.nav.coop], ['/guides/sephiria-roadmap', copy.utility.roadmap], ['/guides/sephiria-how-many-chapters', 'Chapters']] : []),
     ['/guides', copy.nav.guides],
   ]
   return <header className="wiki-header">
@@ -24,6 +24,8 @@ export function WikiHeader({ locale, copy }: { locale: Locale; copy: Copy }) {
     </div>
     <div className="header-utility"><nav className="utility-nav" aria-label="Utility navigation">
       <Link href={href('/guides/sephiria-1-0')}>{copy.utility.update}</Link>
+      {locale === 'en' && <Link href={href('/guides/sephiria-puzzle')}>Puzzles</Link>}
+      {locale === 'en' && <Link href={href('/guides/sephiria-discord')}>{copy.utility.community}</Link>}
       <Link href={href('/#codes')}>{copy.utility.codes}</Link>
       <a href={officialLinks.community} target="_blank" rel="noreferrer">{copy.utility.community}</a>
     </nav></div>

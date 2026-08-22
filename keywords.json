@@ -2,51 +2,90 @@
   "categories": [
     {
       "category": "guide",
-      "keywords": ["sephiria guide", "sephiria wiki"]
+      "keywords": [
+        "sephiria guide",
+        "sephiria wiki",
+        "sephiria roadmap",
+        "sephiria puzzle",
+        "sephiria how many chapters",
+        "sephiria secrets"
+      ]
     },
     {
       "category": "weapons",
-      "keywords": ["sephiria weapons", "sephiria grimoire", "sephiria tier list"]
+      "keywords": [
+        "sephiria weapons",
+        "sephiria grimoire",
+        "sephiria tier list",
+        "sephiria upgrade tree",
+        "sephiria best weapon",
+        "sephira weapons",
+        "sephiria artifact"
+      ]
     },
     {
       "category": "builds",
-      "keywords": ["sephiria builds", "sephiria destiny inscription"]
+      "keywords": [
+        "sephiria builds",
+        "sephiria destiny inscription"
+      ]
     },
     {
       "category": "coop",
-      "keywords": ["sephiria coop"]
+      "keywords": [
+        "sephiria coop"
+      ]
     },
     {
       "category": "secret rooms",
-      "keywords": ["sephiria secret rooms"]
+      "keywords": [
+        "sephiria secret rooms"
+      ]
     },
     {
       "category": "characters",
-      "keywords": ["sephiria elru"]
+      "keywords": [
+        "sephiria elru",
+        "aiba sephiria",
+        "sephiria all characters"
+      ]
     },
     {
       "category": "costumes",
-      "keywords": ["sephiria costumes"]
+      "keywords": [
+        "sephiria costumes"
+      ]
     },
     {
       "category": "mods",
-      "keywords": ["sephiria mods"]
+      "keywords": [
+        "sephiria mods"
+      ]
     },
     {
       "category": "platforms",
-      "keywords": ["sephiria switch"]
+      "keywords": [
+        "sephiria switch"
+      ]
     },
     {
       "category": "community",
-      "keywords": ["sephiria reddit"]
+      "keywords": [
+        "sephiria reddit",
+        "sephiria discord"
+      ]
     },
     {
       "category": "review",
-      "keywords": ["sephiria review"]
+      "keywords": [
+        "sephiria review"
+      ]
     },
     {
       "category": "updates",
-      "keywords": ["sephiria 1.0"]
+      "keywords": [
+        "sephiria 1.0"
+      ]
     }
   ]
 }

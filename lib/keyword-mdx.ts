@@ -20,6 +20,17 @@ const englishLoaders: Record<string, () => Promise<{ default: MdxComponent }>> =
   'sephiria-reddit': () => import('@/content/en/keywords/sephiria-reddit.mdx'),
   'sephiria-review': () => import('@/content/en/keywords/sephiria-review.mdx'),
   'sephiria-1-0': () => import('@/content/en/keywords/sephiria-1-0.mdx'),
+  'sephiria-roadmap': () => import('@/content/en/keywords/sephiria-roadmap.mdx'),
+  'sephiria-puzzle': () => import('@/content/en/keywords/sephiria-puzzle.mdx'),
+  'sephiria-how-many-chapters': () => import('@/content/en/keywords/sephiria-how-many-chapters.mdx'),
+  'sephiria-secrets': () => import('@/content/en/keywords/sephiria-secrets.mdx'),
+  'sephiria-upgrade-tree': () => import('@/content/en/keywords/sephiria-upgrade-tree.mdx'),
+  'sephiria-best-weapon': () => import('@/content/en/keywords/sephiria-best-weapon.mdx'),
+  'sephira-weapons': () => import('@/content/en/keywords/sephira-weapons.mdx'),
+  'sephiria-artifact': () => import('@/content/en/keywords/sephiria-artifact.mdx'),
+  'aiba-sephiria': () => import('@/content/en/keywords/aiba-sephiria.mdx'),
+  'sephiria-all-characters': () => import('@/content/en/keywords/sephiria-all-characters.mdx'),
+  'sephiria-discord': () => import('@/content/en/keywords/sephiria-discord.mdx'),
 }
 
 export async function getKeywordMdx(slug: string, _locale: Locale) {
