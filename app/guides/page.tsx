@@ -1,9 +1,11 @@
-﻿import type { Metadata } from 'next'
-import { KeywordGuideIndex } from '@/app/keyword-guide-index'
+﻿import { KeywordGuideIndex } from '@/app/keyword-guide-index'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Sephiria Guides: Verified Topics & Research Status',
-  description: 'Browse Sephiria guide topics and see which weapon, build, co-op, update, and community details have verified sources.',
-  alternates: { canonical: '/guides', languages: { en: '/guides', 'x-default': '/guides' } },
-}
+export const metadata = pageMetadata({
+  title: 'Sephiria Guides: Verified Facts by Search Topic',
+  description: 'Browse Sephiria guides built from supplied research, with one page per search topic, official source links, direct answers, and clearly marked unconfirmed details.',
+  path: '/guides',
+  keywords: ['Sephiria guides', 'Sephiria wiki', 'Sephiria facts'],
+})
+
 export default function Page() { return <KeywordGuideIndex locale="en" /> }

@@ -1,11 +1,11 @@
-﻿import type { Metadata } from 'next'
-import { GrimoirePage } from '../../grimoire-page'
-import { ArticleJsonLd } from '@/app/seo-json-ld'
+﻿import { GrimoirePage } from '../../grimoire-page'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Sephiria Build Planning: Grimoire, Artifacts & Tablets',
-  description: 'Plan Sephiria runs around weapon branches, artifacts, tablets, and animal synergies with clearly separated confirmed facts and open questions.',
-  alternates: { canonical: '/weapons/grimoire', languages: { en: '/weapons/grimoire', 'x-default': '/weapons/grimoire' } },
-  openGraph: { type: 'article', title: 'Sephiria Build Planning: Grimoire, Artifacts & Tablets', description: 'Build-planning notes for weapons, artifacts, tablets, and animal synergies.' },
-}
-export default function Page() { return <><ArticleJsonLd headline="Sephiria Build Planning: Grimoire, Artifacts & Tablets" description="Build-planning notes for weapons, artifacts, tablets, and animal synergies." path="/weapons/grimoire" breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Weapons', path: '/weapons' }, { name: 'Build Planning', path: '/weapons/grimoire' }]} /><GrimoirePage locale="en" /></> }
+export const metadata = pageMetadata({
+  title: 'Sephiria Grimoire: Build Planner Facts',
+  description: 'Review Sephiria Grimoire build-planning context from supplied research, with confirmed system scale, official links, and unknown item details marked unconfirmed.',
+  path: '/weapons/grimoire',
+  keywords: ['Sephiria Grimoire', 'Sephiria builds', 'Sephiria build planner'],
+})
+
+export default function Page() { return <GrimoirePage locale="en" /> }

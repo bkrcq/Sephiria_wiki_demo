@@ -1,10 +1,16 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { officialLinks } from '@/lib/content'
 import { localeNames, localePath, type Locale } from '@/lib/locales'
 import type { Copy } from '@/lib/content'
 
 export function WikiHeader({ locale, copy }: { locale: Locale; copy: Copy }) {
   const href = (path: string) => localePath(locale, path)
+  const mainNav = [
+    ['/weapons', copy.nav.weapons],
+    ['/weapons/grimoire', copy.nav.builds],
+    ...(locale === 'en' ? [['/artifacts', copy.nav.artifacts], ['/bosses', copy.nav.bosses], ['/coop', copy.nav.coop]] : []),
+    ['/guides', copy.nav.guides],
+  ]
   return <header className="wiki-header">
     <div className="header-main">
       <Link className="brand" href={href('')}>
@@ -12,13 +18,13 @@ export function WikiHeader({ locale, copy }: { locale: Locale; copy: Copy }) {
         <span><span className="brand-title">{copy.siteTitle}</span><span className="brand-subtitle">{copy.siteSubtitle}</span></span>
       </Link>
       <nav className="main-nav" aria-label="Main navigation">
-        {[['weapons', copy.nav.weapons], ['weapons/grimoire', copy.nav.builds], ...(locale === 'en' ? [['artifacts', copy.nav.artifacts], ['bosses', copy.nav.bosses], ['coop', copy.nav.coop]] : []), ['guides', copy.nav.guides]].map(([path, label]) => <Link key={path} href={href(path)}>{label}</Link>)}
+        {mainNav.map(([path, label]) => <Link key={path} href={href(path)}>{label}</Link>)}
       </nav>
       <a className="steam-pill" href={officialLinks.steam} target="_blank" rel="noreferrer">{copy.steam}</a>
     </div>
     <div className="header-utility"><nav className="utility-nav" aria-label="Utility navigation">
-      <a href={`${href('')}#updates`}>{copy.utility.update}</a>
-      <a href={`${href('')}#codes`}>{copy.utility.codes}</a>
+      <Link href={href('/guides/sephiria-1-0')}>{copy.utility.update}</Link>
+      <Link href={href('/#codes')}>{copy.utility.codes}</Link>
       <a href={officialLinks.community} target="_blank" rel="noreferrer">{copy.utility.community}</a>
     </nav></div>
   </header>
