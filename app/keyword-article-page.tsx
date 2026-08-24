@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import { Breadcrumbs } from '@/components/breadcrumbs'
 import { JsonLd } from '@/components/json-ld'
 import { WikiShell } from '@/components/wiki-shell'
@@ -22,6 +22,15 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
     { label: 'Guides', href: '/guides' },
     { label: page.keyword },
   ]
+  const faqSchema = page.faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: page.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : undefined
   const schema = [
     {
       '@context': 'https://schema.org',
@@ -46,6 +55,7 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
         ...(item.href ? { item: localeUrl(locale, item.href) } : {}),
       })),
     },
+    ...(faqSchema ? [faqSchema] : []),
   ]
 
   return <WikiShell locale={locale} copy={copy}>
@@ -59,15 +69,17 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
       </div>
       <div className="article-layout">
         <article className="article-content">
-          <p className="research-note"><strong>Research snapshot:</strong> facts on this page were last checked from the supplied official-source research on August 7, 2026. This independent fan resource marks unsupported details as unconfirmed.</p>
+          <p className="research-note"><strong>Last checked:</strong> August 24, 2026. This independent fan resource prioritizes official Steam and developer channels; details not supported by those sources are marked unconfirmed.</p>
           <Content />
+          {page.faqs?.length ? <section className="keyword-faq" aria-labelledby="faq-heading"><h2 id="faq-heading">Quick answers</h2>{page.faqs.map((faq) => <div key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></div>)}</section> : null}
         </article>
         <aside className="article-sidebar" aria-label="Page sources and related links">
           <h2>Confirmed sources</h2>
-          <p>This page uses only the supplied Sephiria research. Unsupported details are marked unconfirmed.</p>
+          <p>This page prioritizes official Steam and developer references. Details that cannot be verified from those sources are marked unconfirmed.</p>
           <ul className="source-list">
             <li><a href={officialLinks.website} target="_blank" rel="noreferrer">Official website</a></li>
             <li><a href={officialLinks.steam} target="_blank" rel="noreferrer">Steam store</a></li>
+            <li><a href={officialLinks.steamNews} target="_blank" rel="noreferrer">Steam update history</a></li>
             <li><a href={officialLinks.community} target="_blank" rel="noreferrer">Steam Community</a></li>
             <li><a href={officialLinks.discord} target="_blank" rel="noreferrer">Discord entry</a></li>
             <li><a href={officialLinks.youtube} target="_blank" rel="noreferrer">Official YouTube</a></li>

@@ -9,6 +9,8 @@ export type KeywordPage = {
   title: string
   description: string
   answer: string
+  aliases?: string[]
+  faqs?: { question: string; answer: string }[]
 }
 
 const lowValueKeywordSlugs = new Set([
@@ -18,7 +20,6 @@ const lowValueKeywordSlugs = new Set([
   'sephiria-mods',
   'sephiria-reddit',
   'sephiria-secret-rooms',
-  'sephiria-switch',
   'sephiria-tier-list',
 ])
 
@@ -126,9 +127,15 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria switch",
     "slug": "sephiria-switch",
     "category": "platforms",
-    "title": "Sephiria Switch: Official Platform Status",
-    "description": "Sephiria Switch status: supplied research confirms Steam, Windows, and macOS, but does not confirm a Nintendo Switch release or planned launch date.",
-    "answer": "Switch availability is unconfirmed. The supplied research confirms Steam, Windows and macOS, but does not confirm a Nintendo Switch release."
+    "title": "Is Sephiria on Nintendo Switch? Release Date & Platform Status",
+    "description": "Is Sephiria coming to Nintendo Switch? Check the official platform status, whether a Switch release date or eShop page exists, and where to watch for confirmed news.",
+    "answer": "As of August 24, 2026, Sephiria's official Steam listing confirms its Steam release but does not list Nintendo Switch or a Switch release date. No official Switch announcement or eShop page was identified in the sources checked.",
+    "aliases": ["sephiria nintendo switch", "sephiria switch release date", "is sephiria on switch"],
+    "faqs": [
+      { "question": "Is Sephiria on Nintendo Switch?", "answer": "No Nintendo Switch version is listed on Sephiria's official Steam page as of August 24, 2026." },
+      { "question": "What is the Sephiria Switch release date?", "answer": "No official Nintendo Switch release date was identified in the Steam listing, Steam update history, or official developer links checked on August 24, 2026." },
+      { "question": "Is there a Sephiria Nintendo eShop page?", "answer": "No official Nintendo eShop page was identified in the sources checked on August 24, 2026." }
+    ]
   },
   {
     "keyword": "sephiria reddit",
@@ -158,17 +165,28 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria roadmap",
     "slug": "sephiria-roadmap",
     "category": "guide",
-    "title": "Sephiria Roadmap: Updates, Plans & Facts",
-    "description": "Sephiria roadmap coverage from research: review release and update dates, official channels, and roadmap details that remain unconfirmed today.",
-    "answer": "The supplied research records release and update dates but does not include a confirmed public Sephiria roadmap or full 1.0 changelog."
+    "title": "Sephiria Roadmap: Updates, Patches & Official Plans",
+    "description": "Check Sephiria's official release and update record, where to find patch notes, and whether TEAM HORAY has announced a public roadmap.",
+    "answer": "Sephiria released on Steam on July 31, 2026. Its Steam listing links to update history, but no dated long-term public roadmap was identified in the official sources checked on August 24, 2026.",
+    "aliases": ["sephiria updates", "sephiria patch notes"],
+    "faqs": [
+      { "question": "When did Sephiria release?", "answer": "Sephiria's official Steam listing gives July 31, 2026 as its release date." },
+      { "question": "Does Sephiria have an official roadmap?", "answer": "No dated long-term public roadmap was identified in the official sources checked on August 24, 2026." },
+      { "question": "Where can I check Sephiria patch notes?", "answer": "Use Sephiria's Steam update history and Steam Community hub for current developer announcements." }
+    ]
   },
   {
     "keyword": "sephiria puzzle",
     "slug": "sephiria-puzzle",
     "category": "guide",
-    "title": "Sephiria Puzzle Guide: Facts & Unknowns for Players",
-    "description": "Sephiria puzzle coverage from research: separate confirmed tower-run systems from puzzle types, solutions, locations, and rewards that remain unconfirmed today.",
-    "answer": "The supplied research does not confirm a Sephiria puzzle list, solution guide, puzzle locations, or puzzle rewards."
+    "title": "Sephiria Puzzle Guide: Verified Status & Research",
+    "description": "Looking for Sephiria puzzle solutions or locations? See the confirmed game context, what has not been documented by official sources, and where to verify new discoveries.",
+    "answer": "No official puzzle list, solution guide, locations, or rewards were identified in the sources checked on August 24, 2026. This page separates verified game systems from player-reported puzzle details.",
+    "aliases": ["sephiria puzzle guide", "sephiria puzzle solutions"],
+    "faqs": [
+      { "question": "Is there an official Sephiria puzzle guide?", "answer": "No official puzzle list or solution guide was identified in the sources checked on August 24, 2026." },
+      { "question": "Are Sephiria puzzle locations confirmed?", "answer": "Official sources checked for this page did not document a verified puzzle-location list or reward table." }
+    ]
   },
   {
     "keyword": "sephiria how many chapters",
@@ -190,9 +208,15 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria upgrade tree",
     "slug": "sephiria-upgrade-tree",
     "category": "weapons",
-    "title": "Sephiria Upgrade Tree: Branches & Facts Guide",
-    "description": "Sephiria upgrade tree coverage from research: six weapon branches and 200+ upgrades are confirmed, while nodes, costs, and routes remain unconfirmed today.",
-    "answer": "The supplied research confirms 6 weapon branches and more than 200 upgrades, but not a complete Sephiria upgrade tree."
+    "title": "Sephiria Upgrade Tree: 6 Weapon Branches & 200+ Upgrades",
+    "description": "Sephiria's official Steam information confirms six weapon branches and more than 200 upgrades. Find the verified scope and what is still needed for a complete upgrade-tree map.",
+    "answer": "Official Steam information confirms six weapon branches with more than 200 upgrades. A complete node-by-node upgrade tree, costs, and best routes were not identified in the sources checked on August 24, 2026.",
+    "aliases": ["sephiria weapon upgrade tree", "sephiria weapon upgrades"],
+    "faqs": [
+      { "question": "How many weapon branches are in Sephiria?", "answer": "Official Steam information describes six weapon branches." },
+      { "question": "How many upgrades does Sephiria have?", "answer": "Official Steam information describes more than 200 upgrades." },
+      { "question": "Is there a complete Sephiria upgrade tree map?", "answer": "A verified node-by-node map, including costs and routes, was not identified in the official sources checked on August 24, 2026." }
+    ]
   },
   {
     "keyword": "sephiria best weapon",
@@ -214,17 +238,28 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria artifact",
     "slug": "sephiria-artifact",
     "category": "weapons",
-    "title": "Sephiria Artifact Guide: Count & Facts Guide",
-    "description": "Sephiria artifact coverage from research: 300 artifacts are recorded, while names, effects, rarity, routes, and best combinations remain unconfirmed today.",
-    "answer": "The supplied research records 300 artifacts in Sephiria but does not provide a verified artifact catalogue or tier list."
+    "title": "Sephiria Artifacts: 300-Item Scope & Bond Artifacts Status",
+    "description": "Official Sephiria information describes about 300 artifacts. Check the verified artifact scope and whether 'Bond Artifacts' is a documented official system.",
+    "answer": "Official Steam information describes about 300 artifacts in Sephiria. A complete item catalogue and an official system specifically named 'Bond Artifacts' were not identified in the sources checked on August 24, 2026.",
+    "aliases": ["bond artifacts sephiria", "sephiria bond artifacts", "sephiria artifacts"],
+    "faqs": [
+      { "question": "How many artifacts are in Sephiria?", "answer": "Official Steam information describes about 300 artifacts." },
+      { "question": "Are Bond Artifacts an official Sephiria system?", "answer": "An official system specifically named Bond Artifacts was not identified in the sources checked on August 24, 2026." },
+      { "question": "Where can I find a complete Sephiria artifact list?", "answer": "A complete official item catalogue with effects and drop sources was not identified in the sources checked for this page." }
+    ]
   },
   {
     "keyword": "aiba sephiria",
     "slug": "aiba-sephiria",
     "category": "characters",
-    "title": "Aiba Sephiria: Character Facts & Status Guide",
-    "description": "Aiba Sephiria coverage from research: see what is confirmed about the game and which character identity, role, and story details remain unconfirmed today.",
-    "answer": "The supplied research does not confirm an Aiba Sephiria profile, role, abilities, or story details."
+    "title": "Aiba Sephiria: Character Search Status",
+    "description": "Searching for Aiba in Sephiria? Review what the official sources identify, what they do not confirm about this character query, and how to verify future information.",
+    "answer": "The official Sephiria sources checked on August 24, 2026 did not identify a verified Aiba character profile, role, abilities, or story entry. This page avoids treating the search term itself as confirmation.",
+    "aliases": ["sephiria aiba", "aiba character sephiria"],
+    "faqs": [
+      { "question": "Who is Aiba in Sephiria?", "answer": "The official Sephiria sources checked on August 24, 2026 did not identify a verified Aiba character profile." },
+      { "question": "Is Aiba a playable Sephiria character?", "answer": "No official source checked for this page confirmed Aiba as a playable character, NPC, or story character." }
+    ]
   },
   {
     "keyword": "sephiria all characters",
@@ -255,6 +290,6 @@ export function keywordMetadata(page: KeywordPage, locale: Locale = 'en'): Metad
     path: `/guides/${page.slug}`,
     locale,
     index: locale === 'en' && isKeywordIndexable(page.slug),
-    keywords: [page.keyword, 'Sephiria', 'wiki'],
+    keywords: [page.keyword, ...(page.aliases || []), 'Sephiria', 'wiki'],
   })
 }

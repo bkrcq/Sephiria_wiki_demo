@@ -19,6 +19,7 @@ export const officialLinks = {
   youtube: 'https://www.youtube.com/@horay5115',
   trailer: 'https://www.youtube.com/watch?v=uK0Yjz3Q3Sc',
   community: 'https://steamcommunity.com/app/2436940/',
+  steamNews: 'https://store.steampowered.com/news/app/2436940',
   reddit: 'https://www.reddit.com/r/sephiria/',
 }
 

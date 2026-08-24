@@ -1,9 +1,9 @@
-﻿import type { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
 import { isKeywordIndexable, keywordPages } from '@/lib/keyword-pages'
 import { SITE_URL } from '@/lib/seo'
 
 const staticPaths = ['', '/weapons', '/weapons/grimoire', '/artifacts', '/bosses', '/coop', '/guides']
-const lastModified = new Date('2026-08-22T00:00:00.000Z')
+const lastModified = new Date('2026-08-24T00:00:00.000Z')
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
