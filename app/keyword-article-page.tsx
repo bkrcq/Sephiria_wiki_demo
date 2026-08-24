@@ -4,7 +4,7 @@ import { JsonLd } from '@/components/json-ld'
 import { WikiShell } from '@/components/wiki-shell'
 import { codeRows, getCopy, officialLinks } from '@/lib/content'
 import { getKeywordMdx } from '@/lib/keyword-mdx'
-import { keywordPages, type KeywordPage } from '@/lib/keyword-pages'
+import { isKeywordIndexable, keywordPages, type KeywordPage } from '@/lib/keyword-pages'
 import { localePath, type Locale } from '@/lib/locales'
 import { absoluteUrl, localeUrl, RESEARCH_DATE } from '@/lib/seo'
 import { notFound } from 'next/navigation'
@@ -16,7 +16,7 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
 
   const path = `/guides/${page.slug}`
   const articleUrl = localeUrl(locale, path)
-  const related = keywordPages.filter((item) => item.category === page.category && item.slug !== page.slug)
+  const related = keywordPages.filter((item) => item.category === page.category && item.slug !== page.slug && isKeywordIndexable(item.slug))
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Guides', href: '/guides' },
@@ -69,7 +69,7 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
       </div>
       <div className="article-layout">
         <article className="article-content">
-          <p className="research-note"><strong>Last checked:</strong> August 24, 2026. This independent fan resource prioritizes official Steam and developer channels; details not supported by those sources are marked unconfirmed.</p>
+          <aside className="research-note" aria-label="Research and editorial status"><strong>Last checked:</strong> August 24, 2026. <strong>Evidence:</strong> official Steam and developer channels are prioritized; unsupported details are marked unconfirmed. <Link href="/editorial-policy">Read the editorial policy.</Link></aside>
           <Content />
           {page.faqs?.length ? <section className="keyword-faq" aria-labelledby="faq-heading"><h2 id="faq-heading">Quick answers</h2>{page.faqs.map((faq) => <div key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></div>)}</section> : null}
         </article>

@@ -1,8 +1,23 @@
-﻿import { KeywordArticlePage } from '@/app/keyword-article-page'
-import { getKeywordPage, keywordMetadata, keywordPages } from '@/lib/keyword-pages'
-import { isLocale, locales } from '@/lib/locales'
-import { notFound } from 'next/navigation'
+import { getKeywordPage } from '@/lib/keyword-pages'
+import { isLocale } from '@/lib/locales'
+import { notFound, permanentRedirect } from 'next/navigation'
 
-export function generateStaticParams() { return locales.filter((locale) => locale !== 'en').flatMap((locale) => keywordPages.map((page) => ({ locale, slug: page.slug }))) }
-export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) { const { locale, slug } = await params; if (!isLocale(locale)) return {}; const page = getKeywordPage(slug); return page ? keywordMetadata(page, locale) : {} }
-export default async function Page({ params }: { params: Promise<{ locale: string; slug: string }> }) { const { locale, slug } = await params; if (!isLocale(locale)) notFound(); const page = getKeywordPage(slug); if (!page) notFound(); return <KeywordArticlePage locale={locale} page={page} /> }
+// Keyword articles are maintained in English until complete localized editions exist.
+// Existing locale URLs permanently consolidate to their English canonical equivalent.
+export function generateStaticParams() {
+  return []
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+  const { locale, slug } = await params
+  if (!isLocale(locale) || !getKeywordPage(slug)) return {}
+
+  return { robots: { index: false, follow: true } }
+}
+
+export default async function Page({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+  const { locale, slug } = await params
+  if (!isLocale(locale) || !getKeywordPage(slug)) notFound()
+
+  permanentRedirect(`/guides/${slug}`)
+}

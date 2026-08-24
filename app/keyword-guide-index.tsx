@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import { getCopy } from '@/lib/content'
 import { isKeywordIndexable, keywordPages } from '@/lib/keyword-pages'
 import { localePath, type Locale } from '@/lib/locales'
@@ -16,7 +16,7 @@ export function KeywordGuideIndex({ locale }: { locale: Locale }) {
       <div className="article-hero">
         <div className="eyebrow">Guide library</div>
         <h1 className="display-title"><span>Sephiria Guides</span></h1>
-        <p className="hero-copy">Start with the topics that have enough verified information to be useful. Every page shows its research status and links back to current official sources.</p>
+        <p className="hero-copy">Start with topics that have enough verified information to be useful. The research library is currently maintained in English; every page shows its status and links to current official sources.</p>
       </div>
       {grouped.map(([category, pages]) => <section className="keyword-group" key={category}>
         <SectionHeading>{category}</SectionHeading>
