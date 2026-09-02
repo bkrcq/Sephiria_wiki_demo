@@ -1,4 +1,4 @@
-﻿import { LAST_VERIFIED, SITE_URL, absoluteUrl } from '@/app/seo'
+﻿import { CONTENT_UPDATED, SITE_URL, absoluteUrl } from '@/app/seo'
 
 type BreadcrumbItem = { name: string; path: string }
 
@@ -25,7 +25,7 @@ export function ArticleJsonLd({ headline, description, path, breadcrumbs }: { he
       headline,
       description,
       mainEntityOfPage: absoluteUrl(path),
-      dateModified: LAST_VERIFIED,
+      dateModified: CONTENT_UPDATED,
       author: { '@type': 'Organization', name: 'Sephiria Wiki' },
       publisher: { '@type': 'Organization', name: 'Sephiria Wiki' },
       inLanguage: 'en',

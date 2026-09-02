@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import type { Locale } from './locales'
 import { pageMetadata } from './seo'
 
@@ -127,9 +127,9 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria switch",
     "slug": "sephiria-switch",
     "category": "platforms",
-    "title": "Is Sephiria on Nintendo Switch? Release Date & Platform Status",
-    "description": "Is Sephiria coming to Nintendo Switch? Check the official platform status, whether a Switch release date or eShop page exists, and where to watch for confirmed news.",
-    "answer": "As of August 24, 2026, Sephiria's official Steam listing confirms its Steam release but does not list Nintendo Switch or a Switch release date. No official Switch announcement or eShop page was identified in the sources checked.",
+    "title": "Sephiria Switch: Nintendo Platform Status",
+    "description": "Sephiria Switch status: no official Nintendo version or release date was identified; Steam details are confirmed, and future announcements may change this.",
+    "answer": "Official sources checked on August 24, 2026 found no Nintendo Switch version or release date for Sephiria. The official listing confirms the Steam release and does not list Switch.",
     "aliases": ["sephiria nintendo switch", "sephiria switch release date", "is sephiria on switch"],
     "faqs": [
       { "question": "Is Sephiria on Nintendo Switch?", "answer": "No Nintendo Switch version is listed on Sephiria's official Steam page as of August 24, 2026." },
@@ -166,8 +166,8 @@ export const keywordPages: KeywordPage[] = [
     "slug": "sephiria-roadmap",
     "category": "guide",
     "title": "Sephiria Roadmap: Updates, Patches & Official Plans",
-    "description": "Check Sephiria's official release and update record, where to find patch notes, and whether TEAM HORAY has announced a public roadmap.",
-    "answer": "Sephiria released on Steam on July 31, 2026. Its Steam listing links to update history, but no dated long-term public roadmap was identified in the official sources checked on August 24, 2026.",
+    "description": "Sephiria roadmap status: review the July 31, 2026 release, update history, and whether a dated long-term public roadmap was identified in official sources.",
+    "answer": "Sephiria released on Steam on July 31, 2026. Official sources checked on August 24, 2026 show an update history but no dated long-term public roadmap.",
     "aliases": ["sephiria updates", "sephiria patch notes"],
     "faqs": [
       { "question": "When did Sephiria release?", "answer": "Sephiria's official Steam listing gives July 31, 2026 as its release date." },
@@ -179,9 +179,9 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria puzzle",
     "slug": "sephiria-puzzle",
     "category": "guide",
-    "title": "Sephiria Puzzle Guide: Verified Status & Research",
-    "description": "Looking for Sephiria puzzle solutions or locations? See the confirmed game context, what has not been documented by official sources, and where to verify new discoveries.",
-    "answer": "No official puzzle list, solution guide, locations, or rewards were identified in the sources checked on August 24, 2026. This page separates verified game systems from player-reported puzzle details.",
+    "title": "Sephiria Puzzle Guide: Verified Status & Solutions",
+    "description": "Sephiria puzzle guide: no complete official solution list was identified; verify locations, steps, and rewards before treating community instructions as fact.",
+    "answer": "No complete official Sephiria puzzle list or solution guide was identified in sources checked on August 24, 2026. Puzzle locations, steps, and rewards remain unconfirmed.",
     "aliases": ["sephiria puzzle guide", "sephiria puzzle solutions"],
     "faqs": [
       { "question": "Is there an official Sephiria puzzle guide?", "answer": "No official puzzle list or solution guide was identified in the sources checked on August 24, 2026." },
@@ -193,8 +193,13 @@ export const keywordPages: KeywordPage[] = [
     "slug": "sephiria-how-many-chapters",
     "category": "guide",
     "title": "Sephiria How Many Chapters? Confirmed Count",
-    "description": "Sephiria how many chapters has a direct research answer: the brief records six chapters, while names, order, bosses, and unlock details remain unconfirmed.",
-    "answer": "The supplied research records 6 chapters in Sephiria, but it does not provide a verified chapter list, order, or unlock guide."
+    "description": "Sephiria how many chapters? Official research records 6 chapters; names, order, bosses, routes, and unlocks remain unconfirmed in the current guide.",
+    "answer": "Official research records 6 chapters in Sephiria, but it does not provide a verified chapter list, order, or unlock guide.",
+    "aliases": ["how many chapters in sephiria", "how many chapters are in sephiria"],
+    "faqs": [
+      { "question": "How many chapters are in Sephiria?", "answer": "Official research records 6 chapters in Sephiria." },
+      { "question": "Are the Sephiria chapter names and order confirmed?", "answer": "The available research does not provide a verified chapter-by-chapter list, names, order, bosses, or unlock requirements; those details remain unconfirmed." }
+    ]
   },
   {
     "keyword": "sephiria secrets",
@@ -208,9 +213,9 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria upgrade tree",
     "slug": "sephiria-upgrade-tree",
     "category": "weapons",
-    "title": "Sephiria Upgrade Tree: 6 Weapon Branches & 200+ Upgrades",
-    "description": "Sephiria's official Steam information confirms six weapon branches and more than 200 upgrades. Find the verified scope and what is still needed for a complete upgrade-tree map.",
-    "answer": "Official Steam information confirms six weapon branches with more than 200 upgrades. A complete node-by-node upgrade tree, costs, and best routes were not identified in the sources checked on August 24, 2026.",
+    "title": "Sephiria Upgrade Tree: 6 Branches & 200+ Upgrades",
+    "description": "Sephiria upgrade tree facts: six branches and 200+ upgrades are described; a complete node-by-node map remains unconfirmed in current sources.",
+    "answer": "Official research describes six weapon branches and more than 200 upgrades. A complete node-by-node upgrade tree, costs, and best routes remain unconfirmed.",
     "aliases": ["sephiria weapon upgrade tree", "sephiria weapon upgrades"],
     "faqs": [
       { "question": "How many weapon branches are in Sephiria?", "answer": "Official Steam information describes six weapon branches." },
@@ -238,9 +243,9 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria artifact",
     "slug": "sephiria-artifact",
     "category": "weapons",
-    "title": "Sephiria Artifacts: 300-Item Scope & Bond Artifacts Status",
-    "description": "Official Sephiria information describes about 300 artifacts. Check the verified artifact scope and whether 'Bond Artifacts' is a documented official system.",
-    "answer": "Official Steam information describes about 300 artifacts in Sephiria. A complete item catalogue and an official system specifically named 'Bond Artifacts' were not identified in the sources checked on August 24, 2026.",
+    "title": "Sephiria Artifact Guide: 300-Item Status",
+    "description": "Sephiria artifact status: about 300 are described, but a complete list, effects, and Bond Artifacts system remain unconfirmed in current sources.",
+    "answer": "Official research describes about 300 artifacts in Sephiria. A complete item catalogue and an official system named Bond Artifacts remain unconfirmed.",
     "aliases": ["bond artifacts sephiria", "sephiria bond artifacts", "sephiria artifacts"],
     "faqs": [
       { "question": "How many artifacts are in Sephiria?", "answer": "Official Steam information describes about 300 artifacts." },
@@ -252,9 +257,9 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "aiba sephiria",
     "slug": "aiba-sephiria",
     "category": "characters",
-    "title": "Aiba Sephiria: Character Search Status",
-    "description": "Searching for Aiba in Sephiria? Review what the official sources identify, what they do not confirm about this character query, and how to verify future information.",
-    "answer": "The official Sephiria sources checked on August 24, 2026 did not identify a verified Aiba character profile, role, abilities, or story entry. This page avoids treating the search term itself as confirmation.",
+    "title": "Aiba Sephiria: Character Status & Search Facts",
+    "description": "Aiba Sephiria status: official sources did not verify a character profile, role, abilities, story entry, or playable status in current research.",
+    "answer": "Official sources checked on August 24, 2026 do not verify an Aiba character profile, role, abilities, or story entry in Sephiria.",
     "aliases": ["sephiria aiba", "aiba character sephiria"],
     "faqs": [
       { "question": "Who is Aiba in Sephiria?", "answer": "The official Sephiria sources checked on August 24, 2026 did not identify a verified Aiba character profile." },
@@ -273,9 +278,13 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria discord",
     "slug": "sephiria-discord",
     "category": "community",
-    "title": "Sephiria Discord: Official Community Entry",
-    "description": "Sephiria Discord guidance from research: use the pinned Steam discussion as the stable entry while invite links, channels, and server details stay unconfirmed.",
-    "answer": "The supplied research points to a developer-pinned Steam discussion as the stable Discord entry, but does not verify server channels or invite details."
+    "title": "Sephiria Discord: Official Community Entry Guide",
+    "description": "Sephiria Discord guide: use the developer-pinned Steam discussion as the stable entry; invite links and server details remain unconfirmed in current sources.",
+    "answer": "Official research points to a developer-pinned Steam discussion as the stable Sephiria Discord entry. Invite links, channels, and current server details remain unconfirmed.",
+    "faqs": [
+      { "question": "How do I join the Sephiria Discord?", "answer": "Use the developer-pinned Steam discussion as the stable entry point and follow the current community link shown there." },
+      { "question": "Is the Sephiria Discord invite link confirmed?", "answer": "The stable Steam discussion entry is supported by the research, but a current invite URL, server channels, and moderation details remain unconfirmed." }
+    ]
   }
 ]
 
