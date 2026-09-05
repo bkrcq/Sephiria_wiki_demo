@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import type { Locale } from './locales'
 import { pageMetadata } from './seo'
 
@@ -31,16 +31,16 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria guide",
     "slug": "sephiria-guide",
     "category": "guide",
-    "title": "Sephiria Guide: Verified Facts & Beginner Steps",
-    "description": "Sephiria guide answers from verified research: review the premise, Steam release details, core systems, co-op status, and questions that remain unconfirmed.",
+    "title": "Sephiria Guide: Beginner Facts, Builds & Co-op",
+    "description": "Sephiria guide for beginners: learn the verified game premise, Steam release, core systems, co-op scope, and facts that remain unconfirmed today.",
     "answer": "sephiria guide can be answered only at a high level from the supplied Sephiria research; keyword-specific names, rankings, routes, values, or instructions are unconfirmed."
   },
   {
     "keyword": "sephiria wiki",
     "slug": "sephiria-wiki",
     "category": "guide",
-    "title": "Sephiria Wiki: Verified Game Facts & Player Guide",
-    "description": "Sephiria wiki facts from supplied research: review the developer, genre, platforms, release dates, content counts, co-op details, and clearly marked unknowns.",
+    "title": "Sephiria Wiki: Game Facts, Builds & Guides",
+    "description": "Sephiria wiki overview: check developer, platforms, release dates, content counts, co-op facts, and source-backed game guides for players today.",
     "answer": "sephiria wiki can be answered only at a high level from the supplied Sephiria research; keyword-specific names, rankings, routes, values, or instructions are unconfirmed."
   },
   {
@@ -55,9 +55,15 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria grimoire",
     "slug": "sephiria-grimoire",
     "category": "weapons",
-    "title": "Sephiria Grimoire: Confirmed System Facts & Guide",
-    "description": "Sephiria grimoire information from supplied research: understand build context and content scale without inventing names, effects, unlocks, or rankings.",
-    "answer": "sephiria grimoire can be answered only at a high level from the supplied Sephiria research; keyword-specific names, rankings, routes, values, or instructions are unconfirmed."
+    "title": "Sephiria Grimoire Guide: Builds, Upgrades & Facts",
+    "description": "Sephiria Grimoire guide for build planning, upgrades, weapons, artifacts, and tablets, with unknown item details clearly marked as unconfirmed today.",
+    "answer": "The official research confirms Sephiria's build systems, but it does not define Grimoire entries, effects, or upgrade rules; those details remain unconfirmed.",
+    "aliases": ["sephiria grimoire build", "grimoire build sephiria", "sephira grimoire"],
+    "faqs": [
+      { "question": "What is the Sephiria Grimoire?", "answer": "The available research does not define a verified Grimoire catalogue or separate Grimoire progression system." },
+      { "question": "Can I find a confirmed Sephiria Grimoire build?", "answer": "No universal Grimoire build is confirmed. Track weapons, artifacts, tablets, run conditions, and game version before calling a build reliable." },
+      { "question": "Are Grimoire item effects confirmed?", "answer": "Specific names, effects, rarity, acquisition routes, and upgrade rules remain unconfirmed in the current sources." }
+    ]
   },
   {
     "keyword": "sephiria tier list",
@@ -87,9 +93,16 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria coop",
     "slug": "sephiria-coop",
     "category": "coop",
-    "title": "Sephiria Coop: Four-Player Online Facts & Guide",
-    "description": "Sephiria coop is confirmed for online play with up to four players; this page explains the scope and marks missing team systems and setup details unconfirmed.",
-    "answer": "Yes. The supplied research confirms online co-op for up to 4 players."
+    "title": "Sephiria Coop: Online Multiplayer for 4 Players",
+    "description": "Sephiria coop guide: online multiplayer supports up to four players; check the verified scope and unconfirmed invite, cross-play, and progression details.",
+    "answer": "Yes. Sephiria supports online co-op for up to four players according to the supplied research.",
+    "aliases": ["sephiria co op", "sephiria online multiplayer", "sephiria 4 player co op"],
+    "faqs": [
+      { "question": "How many players can play Sephiria co-op?", "answer": "The supplied research confirms online co-op for up to four players." },
+      { "question": "Is Sephiria co-op online or local?", "answer": "The research confirms online co-op, but it does not establish local multiplayer, matchmaking, or lobby steps." },
+      { "question": "Does Sephiria support cross-play?", "answer": "Cross-play and platform compatibility are not confirmed by the current primary sources." },
+      { "question": "How do I invite players to Sephiria co-op?", "answer": "Invitation and lobby procedures are not documented in the supplied research; check current official Steam announcements." }
+    ]
   },
   {
     "keyword": "sephiria secret rooms",
@@ -127,10 +140,10 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria switch",
     "slug": "sephiria-switch",
     "category": "platforms",
-    "title": "Sephiria Switch: Nintendo Platform Status",
-    "description": "Sephiria Switch status: no official Nintendo version or release date was identified; Steam details are confirmed, and future announcements may change this.",
+    "title": "Sephiria Switch: Nintendo Release Status & FAQ",
+    "description": "Sephiria switch status: see current Nintendo evidence, Steam platform details, and release-date information without guesswork today or later.",
     "answer": "Official sources checked on August 24, 2026 found no Nintendo Switch version or release date for Sephiria. The official listing confirms the Steam release and does not list Switch.",
-    "aliases": ["sephiria nintendo switch", "sephiria switch release date", "is sephiria on switch"],
+    "aliases": ["sephiria nintendo switch", "sephiria switch release date", "is sephiria on switch", "sephiria console", "sephiria switch 2", "sephiria mobile"],
     "faqs": [
       { "question": "Is Sephiria on Nintendo Switch?", "answer": "No Nintendo Switch version is listed on Sephiria's official Steam page as of August 24, 2026." },
       { "question": "What is the Sephiria Switch release date?", "answer": "No official Nintendo Switch release date was identified in the Steam listing, Steam update history, or official developer links checked on August 24, 2026." },
@@ -179,26 +192,28 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria puzzle",
     "slug": "sephiria-puzzle",
     "category": "guide",
-    "title": "Sephiria Puzzle Guide: Verified Status & Solutions",
-    "description": "Sephiria puzzle guide: no complete official solution list was identified; verify locations, steps, and rewards before treating community instructions as fact.",
+    "title": "Sephiria Puzzle Guide: Ark, Tablet & Solutions",
+    "description": "Sephiria puzzle guide for Ark, tablet, and exploration searches: see documented facts, then verify locations, steps, and rewards in the game.",
     "answer": "No complete official Sephiria puzzle list or solution guide was identified in sources checked on August 24, 2026. Puzzle locations, steps, and rewards remain unconfirmed.",
-    "aliases": ["sephiria puzzle guide", "sephiria puzzle solutions"],
+    "aliases": ["sephiria puzzle guide", "sephiria puzzle solutions", "sephiria ark puzzle", "ark exploration sephiria", "sephiria align the tablet"],
     "faqs": [
       { "question": "Is there an official Sephiria puzzle guide?", "answer": "No official puzzle list or solution guide was identified in the sources checked on August 24, 2026." },
-      { "question": "Are Sephiria puzzle locations confirmed?", "answer": "Official sources checked for this page did not document a verified puzzle-location list or reward table." }
+      { "question": "Are Sephiria puzzle locations confirmed?", "answer": "Official sources checked for this page did not document a verified puzzle-location list or reward table." },
+      { "question": "What should I record for a Sephiria puzzle solution?", "answer": "Record the chapter or room, trigger, input order, game version, and evidence of the result before treating a solution as confirmed." }
     ]
   },
   {
     "keyword": "sephiria how many chapters",
     "slug": "sephiria-how-many-chapters",
     "category": "guide",
-    "title": "Sephiria How Many Chapters? Confirmed Count",
-    "description": "Sephiria how many chapters? Official research records 6 chapters; names, order, bosses, routes, and unlocks remain unconfirmed in the current guide.",
+    "title": "Sephiria How Many Chapters? 6 Chapters Explained",
+    "description": "Sephiria how many chapters? The verified count is 6; chapter names, order, bosses, routes, and unlock requirements need source confirmation.",
     "answer": "Official research records 6 chapters in Sephiria, but it does not provide a verified chapter list, order, or unlock guide.",
-    "aliases": ["how many chapters in sephiria", "how many chapters are in sephiria"],
+    "aliases": ["how many chapters in sephiria", "how many chapters are in sephiria", "sephiria chapter count"],
     "faqs": [
       { "question": "How many chapters are in Sephiria?", "answer": "Official research records 6 chapters in Sephiria." },
-      { "question": "Are the Sephiria chapter names and order confirmed?", "answer": "The available research does not provide a verified chapter-by-chapter list, names, order, bosses, or unlock requirements; those details remain unconfirmed." }
+      { "question": "Are the Sephiria chapter names and order confirmed?", "answer": "The available research does not provide a verified chapter-by-chapter list, names, order, bosses, or unlock requirements; those details remain unconfirmed." },
+      { "question": "Does Hard Mode add more Sephiria chapters?", "answer": "The research records a 60-level Hard Mode but does not say that it adds chapters; that relationship remains unconfirmed." }
     ]
   },
   {
@@ -278,12 +293,13 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria discord",
     "slug": "sephiria-discord",
     "category": "community",
-    "title": "Sephiria Discord: Official Community Entry Guide",
-    "description": "Sephiria Discord guide: use the developer-pinned Steam discussion as the stable entry; invite links and server details remain unconfirmed in current sources.",
+    "title": "Sephiria Discord: Official Server Link & Join Guide",
+    "description": "Sephiria Discord join guide: use the developer-pinned Steam discussion as the stable entry, while invite links and server details remain unconfirmed.",
     "answer": "Official research points to a developer-pinned Steam discussion as the stable Sephiria Discord entry. Invite links, channels, and current server details remain unconfirmed.",
     "faqs": [
       { "question": "How do I join the Sephiria Discord?", "answer": "Use the developer-pinned Steam discussion as the stable entry point and follow the current community link shown there." },
-      { "question": "Is the Sephiria Discord invite link confirmed?", "answer": "The stable Steam discussion entry is supported by the research, but a current invite URL, server channels, and moderation details remain unconfirmed." }
+      { "question": "Is the Sephiria Discord invite link confirmed?", "answer": "The stable Steam discussion entry is supported by the research, but a current invite URL, server channels, and moderation details remain unconfirmed." },
+      { "question": "Where should I check Sephiria community announcements?", "answer": "Start with the developer-pinned Steam discussion and the official Steam Community hub; verify the date before relying on a community detail." }
     ]
   }
 ]

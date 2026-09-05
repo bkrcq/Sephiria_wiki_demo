@@ -4,8 +4,8 @@ import { defaultLocale, type Locale } from '@/lib/locales'
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://sephiriawiki-indol.vercel.app').replace(/\/$/, '')
 export const LAST_VERIFIED = '2026-08-24'
 export const RESEARCH_DATE = LAST_VERIFIED
-export const SEARCH_DATA_REVIEWED = '2026-09-01'
-export const CONTENT_UPDATED = '2026-09-01'
+export const SEARCH_DATA_REVIEWED = '2026-09-03'
+export const CONTENT_UPDATED = '2026-09-05'
 
 export function absoluteUrl(path = '/') {
   const normalized = path.startsWith('/') ? path : `/${path}`

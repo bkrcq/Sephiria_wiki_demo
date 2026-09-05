@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Breadcrumbs } from '@/components/breadcrumbs'
 import { JsonLd } from '@/components/json-ld'
 import { WikiShell } from '@/components/wiki-shell'
-import { codeRows, getCopy, officialLinks } from '@/lib/content'
+import { getCopy, officialLinks } from '@/lib/content'
 import { getKeywordMdx } from '@/lib/keyword-mdx'
 import { isKeywordIndexable, keywordPages, type KeywordPage } from '@/lib/keyword-pages'
 import { localePath, type Locale } from '@/lib/locales'
@@ -80,7 +80,7 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
     <div className="article-wrap keyword-article">
       <Breadcrumbs locale={locale} items={breadcrumbs} />
       <div className="article-hero">
-        <div className="eyebrow">{page.category} 路 Researched page</div>
+        <div className="eyebrow">{page.category} · Researched page</div>
         <h1 className="display-title"><span>{page.keyword}</span></h1>
         <p className="hero-copy keyword-answer">{page.answer}</p>
       </div>
@@ -101,8 +101,6 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
             <li><a href={officialLinks.discord} target="_blank" rel="noreferrer">Discord entry</a></li>
             <li><a href={officialLinks.youtube} target="_blank" rel="noreferrer">Official YouTube</a></li>
           </ul>
-          <h2 className="sidebar-subtitle">Redemption codes</h2>
-          <div className="code-list">{codeRows.map((row) => <div className="code-row" key={row.reward}><span className="code">{row.code}</span><span className="code-reward">{row.reward}</span></div>)}</div>
           {related.length > 0 && <><h2 className="sidebar-subtitle">Related pages</h2><ul className="source-list">{related.map((item) => <li key={item.slug}><Link href={localePath(locale, `/guides/${item.slug}`)}>{item.keyword}</Link></li>)}</ul></>}
         </aside>
       </div>
