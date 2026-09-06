@@ -122,7 +122,16 @@ a { color: inherit; text-decoration: none; }
 
 /* Keyword research pages reuse the replicated wiki visual language. */
 .keyword-answer { padding: 18px 22px; border: 1px solid hsl(174 68% 48% / .28); background: hsl(174 68% 48% / .07); color: var(--ink); }
+.keyword-fact-strip { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 18px; border: 1px solid var(--line); background: hsl(218 34% 7% / .32); text-align: left; }
+.keyword-fact-strip > div { padding: 12px 14px; border-right: 1px solid var(--line); }
+.keyword-fact-strip > div:last-child { border-right: 0; }
+.keyword-fact-strip span, .sidebar-status strong { display: block; color: var(--muted-2); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+.keyword-fact-strip strong { display: block; margin-top: 5px; color: var(--ink); font-size: 13px; }
+.sidebar-status { display: flex; justify-content: space-between; gap: 12px; margin: 18px 0 2px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+.sidebar-status span { color: var(--ink); }
+
 .keyword-article .article-content > h2:first-child { margin-top: 0; }
+.source-attribution { margin-top: 42px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px !important; }
 .source-list { display: grid; gap: 9px; margin: 15px 0 0; padding-left: 18px; }
 .source-list li, .source-list a { color: var(--muted); font-size: 13px; line-height: 1.55; }
 .source-list a:hover { color: var(--nav-light); }
@@ -132,7 +141,7 @@ a { color: inherit; text-decoration: none; }
 .keyword-grid { margin-top: 26px; }
 .keyword-grid .wiki-card { min-height: 230px; }
 .keyword-grid .card-title { text-transform: none; }
-@media (max-width: 560px) { .keyword-answer { padding: 15px; } .keyword-group { margin-top: 46px; } }
+@media (max-width: 560px) { .keyword-answer { padding: 15px; } .keyword-group { margin-top: 46px; } .keyword-fact-strip { grid-template-columns: 1fr; } .keyword-fact-strip > div { border-right: 0; border-bottom: 1px solid var(--line); } .keyword-fact-strip > div:last-child { border-bottom: 0; } }
 
 .breadcrumbs { max-width: 1120px; margin: 0 auto 28px; }
 .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; color: var(--muted-2); font-size: 12px; }

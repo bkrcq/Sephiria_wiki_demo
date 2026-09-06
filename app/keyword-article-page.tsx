@@ -56,8 +56,10 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
       description: page.description,
       mainEntityOfPage: { '@type': 'WebPage', '@id': articleUrl },
       url: articleUrl,
+      about: { '@type': 'VideoGame', name: 'Sephiria', url: absoluteUrl('/') },
+      isPartOf: { '@type': 'WebSite', name: 'Sephiria Wiki', url: absoluteUrl('/') },
       inLanguage: locale === 'en' ? 'en' : locale,
-      dateModified: CONTENT_UPDATED,
+      dateModified: page.updatedAt || CONTENT_UPDATED,
       isAccessibleForFree: true,
       author: { '@type': 'Organization', name: 'Sephiria Wiki' },
       publisher: { '@type': 'Organization', name: 'Sephiria Wiki', url: absoluteUrl('/') },
@@ -80,19 +82,25 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
     <div className="article-wrap keyword-article">
       <Breadcrumbs locale={locale} items={breadcrumbs} />
       <div className="article-hero">
-        <div className="eyebrow">{page.category} · Researched page</div>
+        <div className="eyebrow">{page.category} - Researched page</div>
         <h1 className="display-title"><span>{page.keyword}</span></h1>
         <p className="hero-copy keyword-answer">{page.answer}</p>
+        <div className="keyword-fact-strip" aria-label="Page facts">
+          <div><span>Status</span><strong>Source-backed</strong></div>
+          <div><span>Last verified</span><strong>{new Date(`${LAST_VERIFIED}T00:00:00Z`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</strong></div>
+          <div><span>Updated</span><strong>{new Date(`${page.updatedAt || CONTENT_UPDATED}T00:00:00Z`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</strong></div>
+        </div>
       </div>
       <div className="article-layout">
         <article className="article-content">
-          <aside className="research-note" aria-label="Research and editorial status"><strong>Search data reviewed:</strong> {new Date(`${SEARCH_DATA_REVIEWED}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}. <strong>Source facts last checked:</strong> {new Date(`${LAST_VERIFIED}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}. <strong>Page updated:</strong> {new Date(`${CONTENT_UPDATED}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}. <strong>Evidence:</strong> official Steam and developer channels are prioritized; unsupported details are marked unconfirmed. <Link href="/editorial-policy">Read the editorial policy.</Link></aside>
+          <aside className="research-note" aria-label="Research and editorial status"><strong>Direct answer first.</strong> This page separates source-backed facts from details that remain unconfirmed. Search data was reviewed {new Date(`${SEARCH_DATA_REVIEWED}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}; source facts were last checked {new Date(`${LAST_VERIFIED}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}. <Link href="/editorial-policy">Read the editorial policy.</Link></aside>
           <Content />
+          <p className="source-attribution">Primary references: <a href={officialLinks.steam} target="_blank" rel="noreferrer">official Steam listing</a> and <a href={officialLinks.website} target="_blank" rel="noreferrer">TEAM HORAY</a>. Search demand is not treated as proof of an unverified feature, item, character, or platform.</p>
           {page.faqs?.length ? <section className="keyword-faq" aria-labelledby="faq-heading"><h2 id="faq-heading">Quick answers</h2>{page.faqs.map((faq) => <div key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></div>)}</section> : null}
         </article>
         <aside className="article-sidebar" aria-label="Page sources and related links">
-          <h2>Confirmed sources</h2>
-          <p>This page prioritizes official Steam and developer references. Details that cannot be verified from those sources are marked unconfirmed.</p>
+          <h2>Sources & status</h2>
+          <p>This page prioritizes official Steam and developer references. Details that cannot be verified from those sources are marked unconfirmed.</p><div className="sidebar-status"><strong>Last verified</strong><span>{new Date(`${LAST_VERIFIED}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</span></div>
           <ul className="source-list">
             <li><a href={officialLinks.website} target="_blank" rel="noreferrer">Official website</a></li>
             <li><a href={officialLinks.steam} target="_blank" rel="noreferrer">Steam store</a></li>

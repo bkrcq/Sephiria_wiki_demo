@@ -4,8 +4,9 @@ import { defaultLocale, type Locale } from '@/lib/locales'
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://sephiriawiki-indol.vercel.app').replace(/\/$/, '')
 export const LAST_VERIFIED = '2026-08-24'
 export const RESEARCH_DATE = LAST_VERIFIED
-export const SEARCH_DATA_REVIEWED = '2026-09-03'
-export const CONTENT_UPDATED = '2026-09-05'
+// The GSC export covers data through September 4, 2026.
+export const SEARCH_DATA_REVIEWED = '2026-09-04'
+export const CONTENT_UPDATED = '2026-09-06'
 
 export function absoluteUrl(path = '/') {
   const normalized = path.startsWith('/') ? path : `/${path}`
@@ -23,7 +24,10 @@ export function localizedPath(locale: Locale, path = '/') {
 }
 
 export function localeAlternates(path: string) {
-  return { canonical: path, languages: { en: path, 'x-default': path } }
+  const normalized = path.startsWith('/') ? path : `/${path}`
+  // Localized keyword pages currently redirect to the English research library,
+  // so only advertise the indexable English URL until equivalent translations exist.
+  return { canonical: normalized, languages: { en: localeUrl('en', normalized), 'x-default': localeUrl('en', normalized) } }
 }
 
 export function noIndexMetadata(title: string): Metadata {
@@ -52,7 +56,7 @@ export function pageMetadata({
     keywords,
     alternates: { canonical },
     robots: index ? { index: true, follow: true } : { index: false, follow: true },
-    openGraph: { type: 'website', url: canonical, title, description, siteName: 'Sephiria Wiki', locale: locale === 'en' ? 'en_US' : locale },
+    openGraph: { type: 'website', url: canonical, title, description, siteName: 'Sephiria Wiki', locale: locale === 'en' ? 'en_US' : locale === 'ko' ? 'ko_KR' : locale === 'ja' ? 'ja_JP' : 'ru_RU' },
     twitter: { card: 'summary', title, description },
   }
 }

@@ -2,7 +2,7 @@
 const source = JSON.parse(fs.readFileSync('keywords.json', 'utf8'))
 const keywords = source.categories.flatMap((c) => c.keywords)
 const configText = fs.readFileSync('lib/keyword-pages.ts', 'utf8')
-const pages = [...configText.matchAll(/"keyword": "([^"]+)",\s+"slug": "([^"]+)",\s+"category": "([^"]+)",\s+"title": "([^"]+)",\s+"description": "([^"]+)"/g)].map((m) => ({ keyword:m[1], slug:m[2], title:m[4], description:m[5] }))
+const pages = [...configText.matchAll(/"keyword": "([^"]+)",\s+"slug": "([^"]+)",(?:\s+"updatedAt": "[^"]+",)?\s+"category": "([^"]+)",(?:\s+"updatedAt": "[^"]+",)?\s+"title": "([^"]+)",\s+"description": "([^"]+)"/g)].map((m) => ({ keyword:m[1], slug:m[2], title:m[4], description:m[5] }))
 let failures = []
 const directAnswerSlugs = new Set(['sephiria-roadmap', 'sephiria-puzzle', 'sephiria-switch', 'sephiria-artifact', 'sephiria-upgrade-tree', 'aiba-sephiria'])
 if (pages.length !== keywords.length) failures.push(`config pages ${pages.length} != keywords ${keywords.length}`)

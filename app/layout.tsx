@@ -32,11 +32,26 @@ export const viewport: Viewport = { themeColor: '#101a2b', colorScheme: 'dark' }
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const websiteSchema = {
     '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'Sephiria Wiki',
-    url: SITE_URL,
-    description: seoByLocale.en.description,
-    inLanguage: 'en',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': `${SITE_URL}/#website`,
+        name: 'Sephiria Wiki',
+        url: SITE_URL,
+        description: seoByLocale.en.description,
+        inLanguage: 'en',
+        about: { '@id': `${SITE_URL}/#game` },
+      },
+      {
+        '@type': 'VideoGame',
+        '@id': `${SITE_URL}/#game`,
+        name: 'Sephiria',
+        url: 'https://store.steampowered.com/app/2436940/Sephiria/',
+        gamePlatform: ['Steam', 'Windows', 'macOS'],
+        developer: { '@type': 'Organization', name: 'TEAM HORAY', url: 'https://teamhoray.com/games/sephiria' },
+        isPartOf: { '@id': `${SITE_URL}/#website` },
+      },
+    ],
   }
   return <html lang="en"><body><JsonLd data={websiteSchema} />{children}</body></html>
 }

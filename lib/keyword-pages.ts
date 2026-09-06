@@ -11,6 +11,8 @@ export type KeywordPage = {
   answer: string
   aliases?: string[]
   faqs?: { question: string; answer: string }[]
+  /** Date when this page's visible content or SEO presentation was last reviewed. */
+  updatedAt?: string
 }
 
 const lowValueKeywordSlugs = new Set([
@@ -31,6 +33,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria guide",
     "slug": "sephiria-guide",
     "category": "guide",
+    "updatedAt": "2026-09-06",
     "title": "Sephiria Guide: Beginner Facts, Builds & Co-op",
     "description": "Sephiria guide for beginners: learn the verified game premise, Steam release, core systems, co-op scope, and facts that remain unconfirmed today.",
     "answer": "sephiria guide can be answered only at a high level from the supplied Sephiria research; keyword-specific names, rankings, routes, values, or instructions are unconfirmed."
@@ -39,6 +42,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria wiki",
     "slug": "sephiria-wiki",
     "category": "guide",
+    "updatedAt": "2026-09-06",
     "title": "Sephiria Wiki: Game Facts, Builds & Guides",
     "description": "Sephiria wiki overview: check developer, platforms, release dates, content counts, co-op facts, and source-backed game guides for players today.",
     "answer": "sephiria wiki can be answered only at a high level from the supplied Sephiria research; keyword-specific names, rankings, routes, values, or instructions are unconfirmed."
@@ -55,6 +59,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria grimoire",
     "slug": "sephiria-grimoire",
     "category": "weapons",
+    "updatedAt": "2026-09-06",
     "title": "Sephiria Grimoire Guide: Builds, Upgrades & Facts",
     "description": "Sephiria Grimoire guide for build planning, upgrades, weapons, artifacts, and tablets, with unknown item details clearly marked as unconfirmed today.",
     "answer": "The official research confirms Sephiria's build systems, but it does not define Grimoire entries, effects, or upgrade rules; those details remain unconfirmed.",
@@ -93,6 +98,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria coop",
     "slug": "sephiria-coop",
     "category": "coop",
+    "updatedAt": "2026-09-06",
     "title": "Sephiria Coop: Online Multiplayer for 4 Players",
     "description": "Sephiria coop guide: online multiplayer supports up to four players; check the verified scope and unconfirmed invite, cross-play, and progression details.",
     "answer": "Yes. Sephiria supports online co-op for up to four players according to the supplied research.",
@@ -140,6 +146,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria switch",
     "slug": "sephiria-switch",
     "category": "platforms",
+    "updatedAt": "2026-09-06",
     "title": "Sephiria Switch: Nintendo Release Status & FAQ",
     "description": "Sephiria switch status: see current Nintendo evidence, Steam platform details, and release-date information without guesswork today or later.",
     "answer": "Official sources checked on August 24, 2026 found no Nintendo Switch version or release date for Sephiria. The official listing confirms the Steam release and does not list Switch.",
@@ -192,6 +199,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria puzzle",
     "slug": "sephiria-puzzle",
     "category": "guide",
+    "updatedAt": "2026-09-06",
     "title": "Sephiria Puzzle Guide: Ark, Tablet & Solutions",
     "description": "Sephiria puzzle guide for Ark, tablet, and exploration searches: see documented facts, then verify locations, steps, and rewards in the game.",
     "answer": "No complete official Sephiria puzzle list or solution guide was identified in sources checked on August 24, 2026. Puzzle locations, steps, and rewards remain unconfirmed.",
@@ -206,6 +214,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria how many chapters",
     "slug": "sephiria-how-many-chapters",
     "category": "guide",
+    "updatedAt": "2026-09-06",
     "title": "Sephiria How Many Chapters? 6 Chapters Explained",
     "description": "Sephiria how many chapters? The verified count is 6; chapter names, order, bosses, routes, and unlock requirements need source confirmation.",
     "answer": "Official research records 6 chapters in Sephiria, but it does not provide a verified chapter list, order, or unlock guide.",
@@ -228,6 +237,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria upgrade tree",
     "slug": "sephiria-upgrade-tree",
     "category": "weapons",
+    "updatedAt": "2026-09-06",
     "title": "Sephiria Upgrade Tree: 6 Branches & 200+ Upgrades",
     "description": "Sephiria upgrade tree facts: six branches and 200+ upgrades are described; a complete node-by-node map remains unconfirmed in current sources.",
     "answer": "Official research describes six weapon branches and more than 200 upgrades. A complete node-by-node upgrade tree, costs, and best routes remain unconfirmed.",
@@ -258,6 +268,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria artifact",
     "slug": "sephiria-artifact",
     "category": "weapons",
+    "updatedAt": "2026-09-06",
     "title": "Sephiria Artifact Guide: 300-Item Status",
     "description": "Sephiria artifact status: about 300 are described, but a complete list, effects, and Bond Artifacts system remain unconfirmed in current sources.",
     "answer": "Official research describes about 300 artifacts in Sephiria. A complete item catalogue and an official system named Bond Artifacts remain unconfirmed.",
@@ -272,6 +283,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "aiba sephiria",
     "slug": "aiba-sephiria",
     "category": "characters",
+    "updatedAt": "2026-09-06",
     "title": "Aiba Sephiria: Character Status & Search Facts",
     "description": "Aiba Sephiria status: official sources did not verify a character profile, role, abilities, story entry, or playable status in current research.",
     "answer": "Official sources checked on August 24, 2026 do not verify an Aiba character profile, role, abilities, or story entry in Sephiria.",
@@ -293,6 +305,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria discord",
     "slug": "sephiria-discord",
     "category": "community",
+    "updatedAt": "2026-09-06",
     "title": "Sephiria Discord: Official Server Link & Join Guide",
     "description": "Sephiria Discord join guide: use the developer-pinned Steam discussion as the stable entry, while invite links and server details remain unconfirmed.",
     "answer": "Official research points to a developer-pinned Steam discussion as the stable Sephiria Discord entry. Invite links, channels, and current server details remain unconfirmed.",
