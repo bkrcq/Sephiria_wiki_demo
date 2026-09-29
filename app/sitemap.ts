@@ -1,4 +1,4 @@
-﻿import type { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
 import { isKeywordIndexable, keywordPages } from '@/lib/keyword-pages'
 import { SITE_URL } from '@/lib/seo'
 
@@ -20,6 +20,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticPaths.map((path) => ({ url: `${SITE_URL}${path}`, lastModified: lastModifiedByPath[path] || new Date('2026-08-24T00:00:00.000Z'), changeFrequency: path === '' ? 'weekly' as const : 'monthly' as const, priority: path === '' ? 1 : path === '/about' || path === '/editorial-policy' ? 0.4 : 0.8 })),
     ...keywordPages
       .filter((page) => indexableKeywordSlugs.has(page.slug))
-      .map((page) => ({ url: `${SITE_URL}/guides/${page.slug}`, lastModified: new Date(`${page.updatedAt || '2026-09-06'}T00:00:00.000Z`), changeFrequency: 'monthly' as const, priority: page.slug === 'sephiria-guide' || page.slug === 'sephiria-switch' || page.slug === 'sephiria-discord' ? 0.8 : 0.5 })),
+      .map((page) => ({ url: `${SITE_URL}/guides/${page.slug}`, lastModified: new Date(`${page.updatedAt || '2026-09-06'}T00:00:00.000Z`), changeFrequency: 'monthly' as const, priority: page.slug === 'sephiria-guide' || page.slug === 'sephiria-switch' || page.slug === 'sephiria-discord' || page.slug === 'sephiria-puzzle' || page.slug === 'sephiria-how-many-chapters' ? 0.8 : 0.5 })),
   ]
 }

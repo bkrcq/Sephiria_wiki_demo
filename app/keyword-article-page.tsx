@@ -83,7 +83,7 @@ export async function KeywordArticlePage({ locale, page }: { locale: Locale; pag
       <Breadcrumbs locale={locale} items={breadcrumbs} />
       <div className="article-hero">
         <div className="eyebrow">{page.category} - Researched page</div>
-        <h1 className="display-title"><span>{page.keyword}</span></h1>
+        <h1 className="display-title"><span>{page.title}</span></h1>
         <p className="hero-copy keyword-answer">{page.answer}</p>
         <div className="keyword-fact-strip" aria-label="Page facts">
           <div><span>Status</span><strong>Source-backed</strong></div>
