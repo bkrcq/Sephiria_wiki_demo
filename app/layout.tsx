@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { seoByLocale } from '@/lib/content'
 import { JsonLd } from '@/components/json-ld'
+import { AdsterraSiteAds } from '@/components/adsterra-ad'
 import { SITE_URL } from '@/lib/seo'
 
 export const metadata: Metadata = {
@@ -53,12 +54,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       },
     ],
   }
+
   return (
     <html lang="en">
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9952408625415269" crossOrigin="anonymous"></script>
       </head>
-      <body><JsonLd data={websiteSchema} />{children}</body>
+      <body><JsonLd data={websiteSchema} />{children}<AdsterraSiteAds /></body>
     </html>
   )
 }
