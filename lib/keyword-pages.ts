@@ -147,8 +147,8 @@ export const keywordPages: KeywordPage[] = [
     "slug": "sephiria-switch",
     "category": "platforms",
     "updatedAt": "2026-09-06",
-    "title": "Sephiria Switch on Nintendo: Release Status & FAQ",
-    "description": "Sephiria Switch status: check documented Nintendo evidence, Steam details, and release-date updates without treating rumors as confirmation.",
+    "title": "Is Sephiria on Nintendo Switch? Release Date & Status",
+    "description": "Is Sephiria coming to Nintendo Switch? No official Switch version or release date announced yet — check the latest status, platform list and FAQ.",
     "answer": "No Nintendo Switch version or release date was identified in the official sources checked on August 24, 2026. The official listing confirms the Steam release and does not list Switch.",
     "aliases": ["sephiria nintendo switch", "sephiria switch release date", "is sephiria on switch", "sephiria console", "sephiria console release", "sephiria game switch", "sephiria switch 2", "sephiria mobile"],
     "faqs": [
@@ -284,8 +284,8 @@ export const keywordPages: KeywordPage[] = [
     "slug": "aiba-sephiria",
     "category": "characters",
     "updatedAt": "2026-09-06",
-    "title": "Aiba Sephiria: Character Status & Search Facts",
-    "description": "Aiba Sephiria status: official sources did not verify a character profile, role, abilities, story entry, or playable status in current research.",
+    "title": "Who Is Aiba in Sephiria? Character Guide",
+    "description": "Who is Aiba in Sephiria? What official sources confirm — and what is still unknown — about this character. Updated guide.",
     "answer": "Official sources checked on August 24, 2026 do not verify an Aiba character profile, role, abilities, or story entry in Sephiria.",
     "aliases": ["sephiria aiba", "aiba character sephiria"],
     "faqs": [

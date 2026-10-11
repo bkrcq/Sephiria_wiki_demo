@@ -136,7 +136,7 @@ function localized(base: Copy, locale: Locale): Copy {
 export const copyByLocale: Record<Locale, Copy> = { en: english, ko: localized(english, 'ko'), ja: localized(english, 'ja'), ru: localized(english, 'ru') }
 
 export const seoByLocale: Record<Locale, { title: string; description: string; keywords: string }> = {
-  en: { title: 'Sephiria Wiki - Weapons, Builds & Artifacts', description: 'Explore Sephiria with research-based guides, weapon upgrades, artifact and tablet builds, co-op facts, unlock context, and cited official links.', keywords: 'Sephiria wiki, weapons, builds, artifacts, tablets, bosses, co-op, beginner guide, roadmap, puzzles, chapters' },
+  en: { title: 'Sephiria Wiki – Guides, Builds, Weapons & Artifacts', description: 'Sephiria Wiki: complete guides, best builds, weapon upgrades, artifact and tablet builds, boss guides, co-op info and more. Everything about Sephiria in one place.', keywords: 'Sephiria wiki, weapons, builds, artifacts, tablets, bosses, co-op, beginner guide, roadmap, puzzles, chapters' },
   ko: { title: '세피리아 공략 위키 — 무기, 빌드와 유물', description: '세피리아의 초보자 공략, 무기 업그레이드, 유물과 석판 빌드, 보스와 협동 플레이 정보를 확인하세요.', keywords: '세피리아 공략, 무기, 빌드, 유물, 석판, 보스, 협동' },
   ja: { title: 'セフィリア 攻略Wiki — 武器・ビルド・アーティファクト', description: 'セフィリアの初心者攻略、武器強化、アーティファクトと石板ビルド、ボス、協力プレイ情報をまとめています。', keywords: 'セフィリア 攻略, 武器, ビルド, アーティファクト, 石板, ボス, 協力' },
   ru: { title: 'Sephiria Wiki — оружие, билды и артефакты', description: 'Гайды по Sephiria: оружие, улучшения, артефакты, таблички, боссы, кооператив и обновления Steam.', keywords: 'Sephiria гайд, оружие, билды, артефакты, таблички, боссы, кооператив' },
