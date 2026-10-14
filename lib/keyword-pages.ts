@@ -149,7 +149,7 @@ export const keywordPages: KeywordPage[] = [
     "updatedAt": "2026-10-14",
     "title": "Is Sephiria on Nintendo Switch? Release Date & Status",
     "description": "Is Sephiria coming to Nintendo Switch? No official Switch version or release date announced yet — check the latest status, platform list and FAQ.",
-    "answer": "No Nintendo Switch version or release date was identified in the official sources checked on August 24, 2026. The official listing confirms the Steam release and does not list Switch.",
+    "answer": "No Nintendo Switch version or release date was identified in the official sources checked on October 14, 2026. The official listing confirms the Steam release and does not list Switch.",
     "aliases": ["sephiria nintendo switch", "sephiria switch release date", "is sephiria on switch", "sephiria console", "sephiria console release", "sephiria game switch", "sephiria switch 2", "sephiria mobile"],
     "faqs": [
       { "question": "Is Sephiria on Nintendo Switch?", "answer": "No Nintendo Switch version is listed on Sephiria's official Steam page as of October 14, 2026." },
@@ -190,11 +190,11 @@ export const keywordPages: KeywordPage[] = [
     "category": "guide",
     "title": "Sephiria Roadmap: Updates, Patch Notes & Official Plans",
     "description": "Sephiria roadmap status: review the July 31, 2026 release, update history, and whether a dated long-term public roadmap was identified in official sources.",
-    "answer": "Sephiria released on Steam on July 31, 2026. Official sources checked on August 24, 2026 show an update history but no dated long-term public roadmap.",
+    "answer": "Sephiria released on Steam on July 31, 2026. Official sources checked on October 14, 2026 show an update history but no dated long-term public roadmap.",
     "aliases": ["sephiria updates", "sephiria patch notes", "sephiria roadmap update"],
     "faqs": [
       { "question": "When did Sephiria release?", "answer": "Sephiria's official Steam listing gives July 31, 2026 as its release date." },
-      { "question": "Does Sephiria have an official roadmap?", "answer": "No dated long-term public roadmap was identified in the official sources checked on August 24, 2026." },
+      { "question": "Does Sephiria have an official roadmap?", "answer": "No dated long-term public roadmap was identified in the official sources checked on October 14, 2026." },
       { "question": "Where can I check Sephiria patch notes?", "answer": "Use Sephiria's Steam update history and Steam Community hub for current developer announcements." }
     ]
   },
@@ -205,7 +205,7 @@ export const keywordPages: KeywordPage[] = [
     "updatedAt": "2026-10-14",
     "title": "Sephiria Puzzle Guide: All Solutions & Locations",
     "description": "Sephiria puzzle solutions: review evidence for locations, steps, Ark or tablet searches, and rewards before trusting an unverified route today.",
-    "answer": "No complete official Sephiria puzzle list or solution guide was identified in sources checked on August 24, 2026. Puzzle locations, steps, and rewards remain unconfirmed.",
+    "answer": "No complete official Sephiria puzzle list or solution guide was identified in sources checked on October 14, 2026. Puzzle locations, steps, and rewards remain unconfirmed.",
     "aliases": ["sephiria puzzle guide", "sephiria puzzle solutions", "sephiria puzzle locations", "sephiria ark puzzle", "ark exploration sephiria", "sephiria align the tablet"],
     "faqs": [
       { "question": "Is there an official Sephiria puzzle guide?", "answer": "No official puzzle list or solution guide was identified in the sources checked on October 14, 2026." },
@@ -284,7 +284,7 @@ export const keywordPages: KeywordPage[] = [
     "aliases": ["bond artifacts sephiria", "sephiria bond artifacts", "sephiria artifacts"],
     "faqs": [
       { "question": "How many artifacts are in Sephiria?", "answer": "Official Steam information describes about 300 artifacts." },
-      { "question": "Are Bond Artifacts an official Sephiria system?", "answer": "An official system specifically named Bond Artifacts was not identified in the sources checked on August 24, 2026." },
+      { "question": "Are Bond Artifacts an official Sephiria system?", "answer": "An official system specifically named Bond Artifacts was not identified in the sources checked on October 14, 2026." },
       { "question": "Where can I find a complete Sephiria artifact list?", "answer": "A complete official item catalogue with effects and drop sources was not identified in the sources checked for this page." }
     ]
   },
@@ -295,10 +295,10 @@ export const keywordPages: KeywordPage[] = [
     "updatedAt": "2026-09-06",
     "title": "Who Is Aiba in Sephiria? Character Guide",
     "description": "Who is Aiba in Sephiria? What official sources confirm — and what is still unknown — about this character. Updated guide.",
-    "answer": "Official sources checked on August 24, 2026 do not verify an Aiba character profile, role, abilities, or story entry in Sephiria.",
+    "answer": "Official sources checked on October 14, 2026 do not verify an Aiba character profile, role, abilities, or story entry in Sephiria.",
     "aliases": ["sephiria aiba", "aiba character sephiria"],
     "faqs": [
-      { "question": "Who is Aiba in Sephiria?", "answer": "The official Sephiria sources checked on August 24, 2026 did not identify a verified Aiba character profile." },
+      { "question": "Who is Aiba in Sephiria?", "answer": "The official Sephiria sources checked on October 14, 2026 did not identify a verified Aiba character profile." },
       { "question": "Is Aiba a playable Sephiria character?", "answer": "No official source checked for this page confirmed Aiba as a playable character, NPC, or story character." }
     ]
   },

@@ -164,7 +164,7 @@ export function TopicGuidePage({ topic, locale = 'en' }: { topic: keyof typeof g
         <div className="eyebrow">{guide.eyebrow}</div>
         <h1 className="display-title"><span>{guide.title}</span></h1>
         <p className="hero-copy">{guide.description}</p>
-        <p className="article-meta">Last verified: August 21, 2026 · Sources are listed below.</p>
+        <p className="article-meta">Last verified: October 14, 2026 · Sources are listed below.</p>
       </div>
 
       <div className="article-layout">
