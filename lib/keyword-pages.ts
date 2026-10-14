@@ -146,15 +146,18 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria switch",
     "slug": "sephiria-switch",
     "category": "platforms",
-    "updatedAt": "2026-09-06",
+    "updatedAt": "2026-10-14",
     "title": "Is Sephiria on Nintendo Switch? Release Date & Status",
     "description": "Is Sephiria coming to Nintendo Switch? No official Switch version or release date announced yet — check the latest status, platform list and FAQ.",
     "answer": "No Nintendo Switch version or release date was identified in the official sources checked on August 24, 2026. The official listing confirms the Steam release and does not list Switch.",
     "aliases": ["sephiria nintendo switch", "sephiria switch release date", "is sephiria on switch", "sephiria console", "sephiria console release", "sephiria game switch", "sephiria switch 2", "sephiria mobile"],
     "faqs": [
-      { "question": "Is Sephiria on Nintendo Switch?", "answer": "No Nintendo Switch version is listed on Sephiria's official Steam page as of August 24, 2026." },
-      { "question": "What is the Sephiria Switch release date?", "answer": "No official Nintendo Switch release date was identified in the Steam listing, Steam update history, or official developer links checked on August 24, 2026." },
-      { "question": "Is there a Sephiria Nintendo eShop page?", "answer": "No official Nintendo eShop page was identified in the sources checked on August 24, 2026." }
+      { "question": "Is Sephiria on Nintendo Switch?", "answer": "No Nintendo Switch version is listed on Sephiria's official Steam page as of October 14, 2026." },
+      { "question": "What is the Sephiria Switch release date?", "answer": "No official Nintendo Switch release date was identified in the Steam listing, Steam update history, or official developer links checked on October 14, 2026." },
+      { "question": "Is there a Sephiria Nintendo eShop page?", "answer": "No official Nintendo eShop page was identified in the sources checked on October 14, 2026." },
+      { "question": "Is Sephiria coming to Switch 2?", "answer": "No Switch 2 version has been announced either. Wait for a statement from TEAM HORAY, Steam, or Nintendo that names the platform, timing, and store destination." },
+      { "question": "Will my Steam progress transfer to Switch if a port appears?", "answer": "Cross-save and cross-play are unconfirmed. A future port announcement would need to state explicitly whether progress transfers; do not assume it." },
+      { "question": "What does a genuine Switch announcement look like?", "answer": "It names the platform, the timing, and a store destination, and it comes from TEAM HORAY, Steam, or Nintendo — not only from a rumor account or a retailer placeholder." }
     ]
   },
   {
@@ -199,15 +202,18 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria puzzle",
     "slug": "sephiria-puzzle",
     "category": "guide",
-    "updatedAt": "2026-09-06",
+    "updatedAt": "2026-10-14",
     "title": "Sephiria Puzzle Guide: All Solutions & Locations",
     "description": "Sephiria puzzle solutions: review evidence for locations, steps, Ark or tablet searches, and rewards before trusting an unverified route today.",
     "answer": "No complete official Sephiria puzzle list or solution guide was identified in sources checked on August 24, 2026. Puzzle locations, steps, and rewards remain unconfirmed.",
     "aliases": ["sephiria puzzle guide", "sephiria puzzle solutions", "sephiria puzzle locations", "sephiria ark puzzle", "ark exploration sephiria", "sephiria align the tablet"],
     "faqs": [
-      { "question": "Is there an official Sephiria puzzle guide?", "answer": "No official puzzle list or solution guide was identified in the sources checked on August 24, 2026." },
+      { "question": "Is there an official Sephiria puzzle guide?", "answer": "No official puzzle list or solution guide was identified in the sources checked on October 14, 2026." },
       { "question": "Are Sephiria puzzle locations confirmed?", "answer": "Official sources checked for this page did not document a verified puzzle-location list or reward table." },
-      { "question": "What should I record for a Sephiria puzzle solution?", "answer": "Record the chapter or room, trigger, input order, game version, and evidence of the result before treating a solution as confirmed." }
+      { "question": "What should I record for a Sephiria puzzle solution?", "answer": "Record the chapter or room, trigger, input order, game version, and evidence of the result before treating a solution as confirmed." },
+      { "question": "How do I know if a puzzle tip is trustworthy?", "answer": "A trustworthy tip states a precise claim, names its setup, includes a game version, and has been tested more than once — including a control case when an item is involved. Tips without those elements are unconfirmed." },
+      { "question": "Why doesn't this page list puzzle solutions?", "answer": "Because no puzzle list could be verified against official sources or reproducible in-game evidence. The page gives you the method to find and verify real ones instead of a list of invented steps." },
+      { "question": "Do patches change puzzle interactions?", "answer": "They can. Always check the official Steam update history and retest a solution after a patch before relying on it." }
     ]
   },
   {
@@ -237,7 +243,7 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria upgrade tree",
     "slug": "sephiria-upgrade-tree",
     "category": "weapons",
-    "updatedAt": "2026-09-06",
+    "updatedAt": "2026-10-14",
     "title": "Sephiria Upgrade Tree: 6 Branches & 200+ Upgrades",
     "description": "Sephiria upgrade tree facts: six branches and 200+ upgrades are described; a complete node-by-node map remains unconfirmed in current sources.",
     "answer": "Official research describes six weapon branches and more than 200 upgrades. A complete node-by-node upgrade tree, costs, and best routes remain unconfirmed.",
@@ -245,7 +251,10 @@ export const keywordPages: KeywordPage[] = [
     "faqs": [
       { "question": "How many weapon branches are in Sephiria?", "answer": "Official Steam information describes six weapon branches." },
       { "question": "How many upgrades does Sephiria have?", "answer": "Official Steam information describes more than 200 upgrades." },
-      { "question": "Is there a complete Sephiria upgrade tree map?", "answer": "A verified node-by-node map, including costs and routes, was not identified in the official sources checked on August 24, 2026." }
+      { "question": "Is there a complete Sephiria upgrade tree map?", "answer": "A verified node-by-node map, including costs and routes, was not identified in the official sources checked on October 14, 2026." },
+      { "question": "What is the best upgrade route?", "answer": "No universal best route is established. Plan by run goal, commit to one branch, spend on the bottleneck that actually ends your runs, and change one thing per run." },
+      { "question": "How do I record an upgrade node reliably?", "answer": "Record the branch, the node name exactly as shown in-game, the observed effect, the cost or requirement, the prerequisite (or unconfirmed), the game version, and your evidence." },
+      { "question": "Do patches change the upgrade tree?", "answer": "They can. Patch notes may add, remove, or rebalance upgrades, which is why every upgrade note should carry a game-version stamp and be retested after a patch." }
     ]
   },
   {
@@ -313,6 +322,23 @@ export const keywordPages: KeywordPage[] = [
       { "question": "How do I join the Sephiria Discord?", "answer": "Use the developer-pinned Steam discussion as the stable entry point and follow the current community link shown there." },
       { "question": "Is the Sephiria Discord invite link confirmed?", "answer": "The stable Steam discussion entry is supported by the research, but a current invite URL, server channels, and moderation details remain unconfirmed." },
       { "question": "Where should I check Sephiria community announcements?", "answer": "Start with the developer-pinned Steam discussion and the official Steam Community hub; verify the date before relying on a community detail." }
+    ]
+  },
+  {
+    "keyword": "sephiria build decision guide",
+    "slug": "sephiria-build-decision-guide",
+    "category": "builds",
+    "updatedAt": "2026-10-14",
+    "title": "Sephiria Build Decision Guide: Choose a Build That Fits Your Run",
+    "description": "Sephiria build decision guide: a step-by-step worksheet to name your run goal, diagnose the bottleneck ending your runs, compare builds, and test one choice for three runs.",
+    "answer": "Choose a Sephiria build by run goal and evidence: name the bottleneck ending your runs, compare two or three candidates on execution, bottleneck fit, testability, and goal fit, then test the leader for three runs changing one thing at a time.",
+    "aliases": ["sephiria how to choose a build", "sephiria best build for beginners", "sephiria build planner", "sephiria build worksheet"],
+    "faqs": [
+      { "question": "What is the best Sephiria build?", "answer": "No universal best build is confirmed. Use the worksheet: name your run goal, diagnose the bottleneck from your own run notes, test one candidate for three runs, and decide from the evidence." },
+      { "question": "How do I choose between two Sephiria builds?", "answer": "List both as candidates, score them on execution, bottleneck fit, testability, and goal fit, then test the leader for three runs with one variable changed at a time." },
+      { "question": "How many runs should I test a build?", "answer": "Three runs with the same goal is a reasonable minimum. Fewer runs can suggest a lead but do not establish reliability." },
+      { "question": "Should my co-op build differ from my solo build?", "answer": "Usually, yes. In co-op, the party can split ranges and roles, and teammates can trade items and revive fallen companions according to the developer's 1.0 announcement. Plan the party first, then the individual builds." },
+      { "question": "When should I re-check a build decision?", "answer": "After a patch, after a goal change, after switching between solo and co-op, or after three consecutive runs end the same new way." }
     ]
   }
 ]

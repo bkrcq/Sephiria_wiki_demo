@@ -31,6 +31,7 @@ const englishLoaders: Record<string, () => Promise<{ default: MdxComponent }>> =
   'aiba-sephiria': () => import('@/content/en/keywords/aiba-sephiria.mdx'),
   'sephiria-all-characters': () => import('@/content/en/keywords/sephiria-all-characters.mdx'),
   'sephiria-discord': () => import('@/content/en/keywords/sephiria-discord.mdx'),
+  'sephiria-build-decision-guide': () => import('@/content/en/keywords/sephiria-build-decision-guide.mdx'),
 }
 
 export async function getKeywordMdx(slug: string, _locale: Locale) {

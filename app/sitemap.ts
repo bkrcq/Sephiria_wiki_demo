@@ -4,15 +4,15 @@ import { SITE_URL } from '@/lib/seo'
 
 const staticPaths = ['', '/weapons', '/weapons/grimoire', '/artifacts', '/bosses', '/coop', '/guides', '/about', '/editorial-policy']
 const lastModifiedByPath: Record<string, Date> = {
-  '': new Date('2026-09-01T00:00:00.000Z'),
-  '/guides': new Date('2026-09-01T00:00:00.000Z'),
-  '/weapons': new Date('2026-08-30T00:00:00.000Z'),
-  '/weapons/grimoire': new Date('2026-08-30T00:00:00.000Z'),
-  '/artifacts': new Date('2026-08-30T00:00:00.000Z'),
-  '/bosses': new Date('2026-08-30T00:00:00.000Z'),
-  '/coop': new Date('2026-08-30T00:00:00.000Z'),
-  '/about': new Date('2026-08-24T00:00:00.000Z'),
-  '/editorial-policy': new Date('2026-08-24T00:00:00.000Z'),
+  '': new Date('2026-10-14T00:00:00.000Z'),
+  '/guides': new Date('2026-10-14T00:00:00.000Z'),
+  '/weapons': new Date('2026-10-14T00:00:00.000Z'),
+  '/weapons/grimoire': new Date('2026-10-14T00:00:00.000Z'),
+  '/artifacts': new Date('2026-10-14T00:00:00.000Z'),
+  '/bosses': new Date('2026-10-14T00:00:00.000Z'),
+  '/coop': new Date('2026-10-14T00:00:00.000Z'),
+  '/about': new Date('2026-10-14T00:00:00.000Z'),
+  '/editorial-policy': new Date('2026-10-14T00:00:00.000Z'),
 }
 const indexableKeywordSlugs = new Set(keywordPages.filter((page) => isKeywordIndexable(page.slug)).map((page) => page.slug))
 export default function sitemap(): MetadataRoute.Sitemap {

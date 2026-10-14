@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import { defaultLocale, type Locale } from '@/lib/locales'
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://sephiriawiki-indol.vercel.app').replace(/\/$/, '')
-export const LAST_VERIFIED = '2026-08-24'
+export const LAST_VERIFIED = '2026-10-14'
 export const RESEARCH_DATE = LAST_VERIFIED
 // The GSC export covers data through September 4, 2026.
 export const SEARCH_DATA_REVIEWED = '2026-09-04'
-export const CONTENT_UPDATED = '2026-09-06'
+export const CONTENT_UPDATED = '2026-10-14'
 
 export function absoluteUrl(path = '/') {
   const normalized = path.startsWith('/') ? path : `/${path}`

@@ -17,8 +17,9 @@ const priorityRelatedSlugs: Record<string, string[]> = {
   'sephiria-roadmap': ['sephiria-switch', 'sephiria-1-0', 'sephiria-discord'],
   'aiba-sephiria': ['sephiria-all-characters', 'sephiria-wiki', 'sephiria-guide'],
   'sephiria-artifact': ['sephiria-grimoire', 'sephiria-builds', 'sephiria-upgrade-tree'],
-  'sephiria-upgrade-tree': ['sephiria-weapons', 'sephiria-grimoire', 'sephiria-artifact'],
-  'sephiria-grimoire': ['sephiria-upgrade-tree', 'sephiria-builds', 'sephiria-artifact'],
+  'sephiria-upgrade-tree': ['sephiria-build-decision-guide', 'sephiria-weapons', 'sephiria-grimoire', 'sephiria-artifact'],
+  'sephiria-grimoire': ['sephiria-build-decision-guide', 'sephiria-upgrade-tree', 'sephiria-builds', 'sephiria-artifact'],
+  'sephiria-build-decision-guide': ['sephiria-builds', 'sephiria-grimoire', 'sephiria-upgrade-tree'],
 }
 export async function KeywordArticlePage({ locale, page }: { locale: Locale; page: KeywordPage }) {
   const copy = getCopy(locale)

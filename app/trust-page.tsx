@@ -27,7 +27,7 @@ export function TrustPage({ kind, locale = 'en' }: { kind: TrustPageKind; locale
         <div className="eyebrow">{page.eyebrow}</div>
         <h1 className="display-title"><span>{page.title}</span></h1>
         <p className="hero-copy">{page.description}</p>
-        <p className="article-meta">Last reviewed: August 24, 2026</p>
+        <p className="article-meta">Last reviewed: October 14, 2026</p>
       </div>
       <article className="article-content">
         {kind === 'about' ? <>
@@ -37,6 +37,19 @@ export function TrustPage({ kind, locale = 'en' }: { kind: TrustPageKind; locale
           <p>The site organizes official release information and player-facing guide topics such as weapons, artifacts, tablets, co-op, updates, and platform availability. It aims to provide a direct answer first, link to the supporting source, and clearly distinguish verified facts from information that still needs confirmation.</p>
           <h2>How information is maintained</h2>
           <p>Pages are reviewed against primary sources where possible, including the developer website, the official Steam store page, Steam announcements, and developer-posted community links. When a useful detail is not supported by a reliable source or reproducible in-game evidence, the page labels it as unconfirmed rather than filling the gap with a guess.</p>
+          <h2>Who maintains this site</h2>
+          <p>Sephiria Wiki is maintained by the Sephiria Wiki editorial team as an independent fan project. It is not staffed by, funded by, or affiliated with TEAM HORAY, Valve, Steam, or Nintendo. The team writes the guides, checks them against the primary sources named in the editorial policy, and updates pages when official announcements change the answer.</p>
+          <h2>Update frequency</h2>
+          <p>There is no fixed publishing calendar. Pages are re-checked and updated when an official announcement changes a fact, when a patch changes gameplay, or when a review finds a gap worth filling with a real method or worksheet. Every expanded guide shows its own last-updated date at the top of the article, and the update log below records the most recent changes.</p>
+          <h2>Corrections</h2>
+          <p>When a source proves an earlier page wrong or incomplete, the page is corrected and its review date is updated. Corrections are recorded in the update log with the date, so readers can see what changed and why. The site does not silently rewrite a wrong claim to look as if it was always right.</p>
+          <h2>Update log</h2>
+          <ul>
+            <li><strong>October 14, 2026:</strong> expanded five core pages with full planning methods (Grimoire builds, weapons, Switch status, upgrade tree, puzzle guide), added the Build Decision Guide worksheet, added per-page last-updated dates, FAQ structured data, a site search page, and a footer last-updated line.</li>
+            <li><strong>October 11, 2026:</strong> refreshed page titles and descriptions for the five highest-impression search topics, using real Search Console query data.</li>
+            <li><strong>September 6, 2026:</strong> keyword research library reviewed; per-page review dates recorded.</li>
+            <li><strong>August 24, 2026:</strong> initial source verification against the official Steam listing and developer pages.</li>
+          </ul>
           <h2>Language availability</h2>
           <p>The keyword research library is currently maintained in English. Navigation and a small set of overview pages are available in Japanese, Korean, and Russian, but untranslated English guide articles are not presented as localized search results.</p>
         </> : <>
@@ -52,6 +65,8 @@ export function TrustPage({ kind, locale = 'en' }: { kind: TrustPageKind; locale
           <p>A search query, social post, retailer placeholder, or repeated community claim is not treated as proof that a feature, character, item, platform version, or release date exists. When a source proves an earlier page wrong or incomplete, the page should be corrected and its review date updated.</p>
           <h2>Content quality rule</h2>
           <p>New pages should add a useful, distinct answer. Pages are not created merely because a phrase appears in search data. A gameplay guide should contain a verified method, a data point, a route, a screenshot, a version note, or another piece of information that helps a player complete a task.</p>
+          <h2>Update frequency and corrections</h2>
+          <p>Guides are re-checked when an official announcement or patch changes the answer, and expanded pages show their own last-updated date. The About page carries a dated update log. When a source proves an earlier page wrong or incomplete, the page is corrected and its review date is updated rather than silently rewritten.</p>
           <h2>Contact and corrections</h2>
           <p>A public corrections contact should be added before accepting player submissions or publishing community-sourced data. Until then, the site limits claims to information that can be traced to the source links shown on each page.</p>
         </>}

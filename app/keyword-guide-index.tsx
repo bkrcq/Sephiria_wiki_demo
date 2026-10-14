@@ -12,6 +12,7 @@ const priorityGuides = [
   { number: 'R', href: '/guides/sephiria-roadmap', label: 'Sephiria roadmap', description: 'Follow the dated release and update record, with claims separated by evidence status.' },
   { number: 'A', href: '/guides/aiba-sephiria', label: 'Aiba in Sephiria', description: 'See what official sources currently confirm about the Aiba search.' },
   { number: 'G', href: '/weapons/grimoire', label: 'Sephiria Grimoire', description: 'Use the Grimoire page as the build-system entry point while unsupported details stay marked.' },
+  { number: 'B', href: '/guides/sephiria-build-decision-guide', label: 'Sephiria Build Decision Guide', description: 'Choose between builds with a worksheet: name the bottleneck, compare candidates, and test one choice for three runs.' },
 ]
 
 export function KeywordGuideIndex({ locale }: { locale: Locale }) {
