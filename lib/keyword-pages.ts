@@ -16,13 +16,23 @@ export type KeywordPage = {
 }
 
 const lowValueKeywordSlugs = new Set([
-  'sephiria-costumes',
+  'aiba-sephiria',
   'sephiria-destiny-inscription',
+  'sephiria-discord',
   'sephiria-elru',
   'sephiria-mods',
   'sephiria-reddit',
-  'sephiria-secret-rooms',
-  'sephiria-tier-list',
+  // Restored to indexable on 2026-10-21 after full real-data rewrites:
+  // sephiria-costumes, sephiria-secret-rooms, sephiria-tier-list.
+  // Merged into static canonical pages on 2026-10-21 (301 in next.config.mjs);
+  // excluded here so they leave the sitemap, guide index, and related links.
+  'sephira-weapons',
+  'sephiria-artifact',
+  'sephiria-coop',
+  'sephiria-grimoire',
+  'sephiria-secrets',
+  'sephiria-weapons',
+  'sephiria-wiki',
 ])
 
 export function isKeywordIndexable(slug: string) {
@@ -33,10 +43,10 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria guide",
     "slug": "sephiria-guide",
     "category": "guide",
-    "updatedAt": "2026-09-06",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria Beginner Guide: Builds, Weapons & Co-op",
-    "description": "Sephiria guide for beginners: learn the verified game premise, Steam release, core systems, co-op scope, and facts that remain unconfirmed today.",
-    "answer": "sephiria guide can be answered only at a high level from the supplied Sephiria research; keyword-specific names, rankings, routes, values, or instructions are unconfirmed."
+    "description": "Sephiria beginner guide with confirmed facts: the Bunnyville premise, 6 chapters, 6 weapon branches, artifacts and tablets, Talents, Training Grounds, and 4-player online co-op.",
+    "answer": "Sephiria is TEAM HORAY's top-down action roguelite: a bunny climbs a tower across 6 chapters to save Bunnyville from a prophesied slaughter. This guide collects the confirmed starting facts - six weapon branches, about 300 artifacts, 70 tablets, Talents unlocked per run, and online co-op for up to 4 players."
   },
   {
     "keyword": "sephiria wiki",
@@ -74,17 +84,19 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria tier list",
     "slug": "sephiria-tier-list",
     "category": "weapons",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria Tier List: What Is Confirmed So Far",
-    "description": "Sephiria tier list research with a direct answer: no verified ranking is supplied, so this page separates confirmed facts from unconfirmed tier placements.",
-    "answer": "sephiria tier list can be answered only at a high level from the supplied Sephiria research; keyword-specific names, rankings, routes, values, or instructions are unconfirmed."
+    "description": "Is there an official Sephiria tier list? No - but the six weapon branches now have dated patch-note histories. See what can be compared honestly and what a real tier list would require.",
+    "answer": "TEAM HORAY has not published an official tier list, and no reproducible community ranking with stated test conditions exists yet. What can be compared honestly is documented scope: six weapon branches, their unlock methods, and their dated update histories, which this page summarizes."
   },
   {
     "keyword": "sephiria builds",
     "slug": "sephiria-builds",
     "category": "builds",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria Builds: Confirmed Systems and Facts",
-    "description": "Sephiria builds information from verified research: review weapons, artifacts, tablets, synergies, co-op context, and build details pending confirmation.",
-    "answer": "sephiria builds can be answered only at a high level from the supplied Sephiria research; keyword-specific names, rankings, routes, values, or instructions are unconfirmed."
+    "description": "How Sephiria builds actually combine: six weapon branches, artifacts and tablets in the inventory grid, Talents, Miracles, item combos, and animal synergies - all from official sources.",
+    "answer": "A Sephiria build combines one of six weapon branches (Sword and Shield, Dagger, Greatsword, Crossbow, Blade, Staff), artifacts and tablets arranged in the inventory, Talents, Miracles, and item combos. This page documents each confirmed layer and the combinations named in official patch notes."
   },
   {
     "keyword": "sephiria destiny inscription",
@@ -114,9 +126,10 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria secret rooms",
     "slug": "sephiria-secret-rooms",
     "category": "secret rooms",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria Secret Rooms: Confirmed Facts & Unknowns",
-    "description": "Sephiria secret rooms research: see what sources confirm about runs and exploration, while room locations, triggers, rewards, and routes remain unconfirmed.",
-    "answer": "sephiria secret rooms can be answered only at a high level from the supplied Sephiria research; keyword-specific names, rankings, routes, values, or instructions are unconfirmed."
+    "description": "Sephiria hidden rooms are confirmed by official patch notes: cracks in the Library, rooms in Rooted Cave and Chapter 4's Woodlands, and the Mystic Pot that turns artifacts into tablets.",
+    "answer": "Hidden rooms are confirmed by TEAM HORAY's patch notes: they appear in stages such as the Library (entered through cracks) and Rooted Cave, in Chapter 4 Woodlands events, and they can hold the Mystic Pot, which converts artifacts into a Tablet."
   },
   {
     "keyword": "sephiria elru",
@@ -130,9 +143,10 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria costumes",
     "slug": "sephiria-costumes",
     "category": "costumes",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria Costumes: Confirmed Cosmetic Information",
-    "description": "Sephiria costumes information here: see what is confirmed and why costume names, availability, effects, and unlock requirements are unconfirmed.",
-    "answer": "sephiria costumes can be answered only at a high level from the supplied Sephiria research; keyword-specific names, rankings, routes, values, or instructions are unconfirmed."
+    "description": "Sephiria has over 20 costumes. Documented facts: costume effects and starting items, appearance variants for 7 costumes (1.0.24), a Chapter 1 costume unlock, and the June 2025 appearance system.",
+    "answer": "Sephiria has over 20 costumes, per the 1.0 launch announcement. They are not purely cosmetic in the documented record: patch notes describe costume effects, starting items granted by a costume, appearance variants added to 7 costumes in update 1.0.24, and at least one costume unlocked in Chapter 1."
   },
   {
     "keyword": "sephiria mods",
@@ -146,15 +160,15 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria switch",
     "slug": "sephiria-switch",
     "category": "platforms",
-    "updatedAt": "2026-10-14",
+    "updatedAt": "2026-10-21",
     "title": "Is Sephiria on Nintendo Switch? Release Date & Status",
     "description": "Is Sephiria coming to Nintendo Switch? No official Switch version or release date announced yet — check the latest status, platform list and FAQ.",
-    "answer": "No Nintendo Switch version or release date was identified in the official sources checked on October 14, 2026. The official listing confirms the Steam release and does not list Switch.",
+    "answer": "No Nintendo Switch version or release date has been announced. The official Steam listing checked on October 21, 2026 confirms Sephiria for Windows and macOS only, and does not list Switch.",
     "aliases": ["sephiria nintendo switch", "sephiria switch release date", "is sephiria on switch", "sephiria console", "sephiria console release", "sephiria game switch", "sephiria switch 2", "sephiria mobile"],
     "faqs": [
-      { "question": "Is Sephiria on Nintendo Switch?", "answer": "No Nintendo Switch version is listed on Sephiria's official Steam page as of October 14, 2026." },
-      { "question": "What is the Sephiria Switch release date?", "answer": "No official Nintendo Switch release date was identified in the Steam listing, Steam update history, or official developer links checked on October 14, 2026." },
-      { "question": "Is there a Sephiria Nintendo eShop page?", "answer": "No official Nintendo eShop page was identified in the sources checked on October 14, 2026." },
+      { "question": "Is Sephiria on Nintendo Switch?", "answer": "No Nintendo Switch version is listed on Sephiria's official Steam page as of October 21, 2026. The confirmed platforms are Windows and macOS." },
+      { "question": "What is the Sephiria Switch release date?", "answer": "No official Nintendo Switch release date exists, because no Switch version has been announced by TEAM HORAY, Steam, or Nintendo." },
+      { "question": "Is there a Sephiria Nintendo eShop page?", "answer": "No official Nintendo eShop page was identified in the sources checked on October 21, 2026." },
       { "question": "Is Sephiria coming to Switch 2?", "answer": "No Switch 2 version has been announced either. Wait for a statement from TEAM HORAY, Steam, or Nintendo that names the platform, timing, and store destination." },
       { "question": "Will my Steam progress transfer to Switch if a port appears?", "answer": "Cross-save and cross-play are unconfirmed. A future port announcement would need to state explicitly whether progress transfers; do not assume it." },
       { "question": "What does a genuine Switch announcement look like?", "answer": "It names the platform, the timing, and a store destination, and it comes from TEAM HORAY, Steam, or Nintendo — not only from a rumor account or a retailer placeholder." }
@@ -172,29 +186,33 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria review",
     "slug": "sephiria-review",
     "category": "review",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria Review: Verified Facts & Review Context",
-    "description": "Sephiria review context from research: brief records 93% positive recent reviews, while dynamic Steam values need checking before they are called current.",
-    "answer": "The supplied brief records 93% Positive Recent Reviews, but this dynamic value should be rechecked on Steam."
+    "description": "Sephiria review snapshot checked October 21, 2026: 'Very Positive' on Steam with 12,746 positive reviews out of 13,485 total (about 95%), plus price and reception context.",
+    "answer": "As of October 21, 2026, Sephiria's all-time Steam rating is Very Positive: 12,746 positive reviews out of 13,485 total (about 95%). This page records that dated snapshot instead of quoting a score without a check date."
   },
   {
     "keyword": "sephiria 1.0",
     "slug": "sephiria-1-0",
     "category": "updates",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria 1.0: Release Date & Update Facts",
-    "description": "Sephiria 1.0 facts from supplied research: the brief records a full release on July 31, 2026 and an August 7, 2026 update; the changelog is unconfirmed.",
-    "answer": "The supplied brief records Full Release: Jul 31, 2026, with Latest Update: Aug 7, 2026; a full 1.0 changelog is unconfirmed."
+    "description": "Sephiria 1.0 launched July 31, 2026: Chapter 6, the ending, 3 Miracles, 19 artifacts, 7 tablets, and an Early Access badge. Post-launch patches ran through 1.0.33 (September 11, 2026).",
+    "answer": "Sephiria 1.0 launched on July 31, 2026, adding Chapter 6, the game ending, 3 new Miracles (Angler, Electromancer, Flame Sword), 19 artifacts, and 7 tablets. Post-launch updates continued through 1.0.33 on September 11, 2026."
   },
   {
     "keyword": "sephiria roadmap",
     "slug": "sephiria-roadmap",
     "category": "guide",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria Roadmap: Updates, Patch Notes & Official Plans",
-    "description": "Sephiria roadmap status: review the July 31, 2026 release, update history, and whether a dated long-term public roadmap was identified in official sources.",
-    "answer": "Sephiria released on Steam on July 31, 2026. Official sources checked on October 14, 2026 show an update history but no dated long-term public roadmap.",
+    "description": "Sephiria's dated record: Early Access April 2025, Chapters 3-6 added August 2025 to July 2026, 1.0 launch July 31, 2026, patches through 1.0.33, and the September 2026 price change.",
+    "answer": "Sephiria's documented record runs from Early Access (April 2025) through the 1.0 launch (July 31, 2026) and post-launch patches up to 1.0.33 (September 11, 2026). No dated long-term future roadmap has been published.",
     "aliases": ["sephiria updates", "sephiria patch notes", "sephiria roadmap update"],
     "faqs": [
       { "question": "When did Sephiria release?", "answer": "Sephiria's official Steam listing gives July 31, 2026 as its release date." },
-      { "question": "Does Sephiria have an official roadmap?", "answer": "No dated long-term public roadmap was identified in the official sources checked on October 14, 2026." },
+      { "question": "Does Sephiria have an official roadmap?", "answer": "No dated long-term public roadmap was identified in the official sources checked on October 21, 2026. The developer communicates through dated Steam patch notes instead." },
+      { "question": "What is the latest Sephiria update?", "answer": "Update 1.0.33, released September 11, 2026, per the official Steam news feed checked on October 21, 2026." },
       { "question": "Where can I check Sephiria patch notes?", "answer": "Use Sephiria's Steam update history and Steam Community hub for current developer announcements." }
     ]
   },
@@ -202,13 +220,13 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria puzzle",
     "slug": "sephiria-puzzle",
     "category": "guide",
-    "updatedAt": "2026-10-14",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria Puzzle Guide: All Solutions & Locations",
     "description": "Sephiria puzzle solutions: review evidence for locations, steps, Ark or tablet searches, and rewards before trusting an unverified route today.",
-    "answer": "No complete official Sephiria puzzle list or solution guide was identified in sources checked on October 14, 2026. Puzzle locations, steps, and rewards remain unconfirmed.",
+    "answer": "No standalone puzzle system or official puzzle list is documented for Sephiria. The one puzzle element named in official patch notes is the Ark quest, whose puzzle items were repriced to 0 in update 1.0.23 (August 4, 2026).",
     "aliases": ["sephiria puzzle guide", "sephiria puzzle solutions", "sephiria puzzle locations", "sephiria ark puzzle", "ark exploration sephiria", "sephiria align the tablet"],
     "faqs": [
-      { "question": "Is there an official Sephiria puzzle guide?", "answer": "No official puzzle list or solution guide was identified in the sources checked on October 14, 2026." },
+      { "question": "Is there an official Sephiria puzzle guide?", "answer": "No official puzzle list or solution guide was identified in the sources checked on October 21, 2026. The Ark quest is the only puzzle element named in official patch notes." },
       { "question": "Are Sephiria puzzle locations confirmed?", "answer": "Official sources checked for this page did not document a verified puzzle-location list or reward table." },
       { "question": "What should I record for a Sephiria puzzle solution?", "answer": "Record the chapter or room, trigger, input order, game version, and evidence of the result before treating a solution as confirmed." },
       { "question": "How do I know if a puzzle tip is trustworthy?", "answer": "A trustworthy tip states a precise claim, names its setup, includes a game version, and has been tested more than once — including a control case when an item is involved. Tips without those elements are unconfirmed." },
@@ -220,15 +238,15 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria how many chapters",
     "slug": "sephiria-how-many-chapters",
     "category": "guide",
-    "updatedAt": "2026-09-06",
+    "updatedAt": "2026-10-21",
     "title": "How Many Chapters in Sephiria? Full Chapter List",
-    "description": "Sephiria how many chapters? The verified count is 6; chapter names, order, bosses, routes, and unlock requirements remain unconfirmed today.",
-    "answer": "Official research records 6 chapters in Sephiria, but it does not provide a verified chapter list, order, or unlock guide.",
+    "description": "Sephiria has 6 chapters. See the full chapter list with the update that added each chapter (3 in Aug 2025, 4 in Dec 2025, 5 in Mar 2026, 6 at 1.0), documented bosses, and locations.",
+    "answer": "Sephiria has 6 chapters, per the Steam store description and TEAM HORAY's 1.0 launch announcement. Chapters 3, 4, 5, and 6 were added one at a time in updates 0.8.3, 0.10.0, 0.11.0, and version 1.0 (July 31, 2026).",
     "aliases": ["how many chapters in sephiria", "how many chapters are in sephiria", "sephiria chapter count"],
     "faqs": [
-      { "question": "How many chapters are in Sephiria?", "answer": "Official research records 6 chapters in Sephiria." },
-      { "question": "Are the Sephiria chapter names and order confirmed?", "answer": "The available research does not provide a verified chapter-by-chapter list, names, order, bosses, or unlock requirements; those details remain unconfirmed." },
-      { "question": "Does Hard Mode add more Sephiria chapters?", "answer": "The research records a 60-level Hard Mode but does not say that it adds chapters; that relationship remains unconfirmed." }
+      { "question": "How many chapters are in Sephiria?", "answer": "Six chapters, confirmed by the Steam store description and the 1.0 launch announcement." },
+      { "question": "When was the last chapter added?", "answer": "Chapter 6 arrived with version 1.0 on July 31, 2026, together with the game's ending." },
+      { "question": "Does Hard Mode add more Sephiria chapters?", "answer": "No. Hard Mode is a separate challenge structure (18 elements at 1.0) layered on the same six chapters." }
     ]
   },
   {
@@ -243,13 +261,13 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria upgrade tree",
     "slug": "sephiria-upgrade-tree",
     "category": "weapons",
-    "updatedAt": "2026-10-14",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria Upgrade Tree: 6 Branches & 200+ Upgrades",
     "description": "Sephiria upgrade tree facts: six branches and 200+ upgrades are described; a complete node-by-node map remains unconfirmed in current sources.",
-    "answer": "Official research describes six weapon branches and more than 200 upgrades. A complete node-by-node upgrade tree, costs, and best routes remain unconfirmed.",
+    "answer": "Sephiria has six weapon branches - Sword and Shield, Dagger, Greatsword, Crossbow, Blade, and Staff - with more than 200 upgrades in total and over 50 per weapon. A complete node-by-node map is not published officially, but patch notes document many individual named upgrades, collected on this page by branch.",
     "aliases": ["sephiria weapon upgrade tree", "sephiria weapon upgrades"],
     "faqs": [
-      { "question": "How many weapon branches are in Sephiria?", "answer": "Official Steam information describes six weapon branches." },
+      { "question": "How many weapon branches are in Sephiria?", "answer": "Six: Sword and Shield, Dagger, Greatsword, Crossbow, Blade, and Staff, per the Steam store description and TEAM HORAY patch notes." },
       { "question": "How many upgrades does Sephiria have?", "answer": "Official Steam information describes more than 200 upgrades." },
       { "question": "Is there a complete Sephiria upgrade tree map?", "answer": "A verified node-by-node map, including costs and routes, was not identified in the official sources checked on October 14, 2026." },
       { "question": "What is the best upgrade route?", "answer": "No universal best route is established. Plan by run goal, commit to one branch, spend on the bottleneck that actually ends your runs, and change one thing per run." },
@@ -261,9 +279,10 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria best weapon",
     "slug": "sephiria-best-weapon",
     "category": "weapons",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria Best Weapon: Confirmed Facts Guide",
-    "description": "Sephiria best weapon guidance from research: compare the confirmed weapon system and build factors without inventing a tier list or strongest choice today.",
-    "answer": "No single best Sephiria weapon is verified by the supplied research; it confirms six branches and more than 200 upgrades."
+    "description": "Which Sephiria weapon is best? Compare the six documented branches - Sword and Shield, Dagger, Greatsword, Crossbow, Blade, Staff - on role, unlock method, and update history.",
+    "answer": "No official source names a single best weapon, but the six branches are fully documented: Sword and Shield, Dagger, Greatsword, Crossbow, Blade, and Staff, each with over 50 upgrades. This page compares them on documented role and unlock facts instead of inventing a winner."
   },
   {
     "keyword": "sephira weapons",
@@ -306,9 +325,10 @@ export const keywordPages: KeywordPage[] = [
     "keyword": "sephiria all characters",
     "slug": "sephiria-all-characters",
     "category": "characters",
+    "updatedAt": "2026-10-21",
     "title": "Sephiria All Characters: Roster Status Guide",
-    "description": "Sephiria all characters coverage from research: review the player premise while character names, roster size, roles, and unlocks remain unconfirmed today.",
-    "answer": "The supplied research does not provide a complete, verified Sephiria character roster."
+    "description": "Every Sephiria character named in official sources: the bunny protagonist, companion NPC Collin, Carrot Soldier summons, and named bosses Kraz, Odner, Mogdi, and Haz.",
+    "answer": "Official sources name a small cast rather than publishing a full roster: the bunny protagonist who defends Bunnyville, the NPC Collin who can become a companion, and bosses including Kraz, Odner, Mogdi, and Haz. This page lists every character named in the store page and official patch notes."
   },
   {
     "keyword": "sephiria discord",

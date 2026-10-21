@@ -33,10 +33,12 @@ const guides: Record<'artifacts' | 'bosses' | 'coop', TopicGuide> = {
     eyebrow: 'Build systems · verified scope',
     title: 'Sephiria Artifacts & Tablets',
     description: 'A source-led starting point for Sephiria artifact and tablet build planning, with verified totals separated from unverified item effects.',
-    answer: 'Sephiria’s official store material describes a run-building system with 300 artifacts and 70 tablets. The available official material does not provide a complete, versioned item catalogue, so this guide does not invent artifact names, effects, rarity, or acquisition rules.',
+    answer: 'Sephiria’s 1.0 launch announcement (July 31, 2026) confirms about 300 artifacts, about 70 tablets, and over 30 potions. The launch update itself added 19 new artifacts and 7 new tablets. Official patch notes also document the systems around them — the Mystic Pot that turns artifacts into tablets, the Tablet Combiner, and artifact unlocks through Destiny Inscription — but no complete, versioned item catalogue has been published officially.',
     confirmed: [
-      { label: 'Artifacts', value: '300', evidence: 'Published game-content total.' },
-      { label: 'Tablets', value: '70', evidence: 'Published game-content total.' },
+      { label: 'Artifacts', value: 'About 300', evidence: 'TEAM HORAY 1.0 launch announcement, July 31, 2026.' },
+      { label: 'Tablets', value: 'About 70', evidence: 'TEAM HORAY 1.0 launch announcement, July 31, 2026.' },
+      { label: 'Potions', value: 'Over 30', evidence: 'TEAM HORAY 1.0 launch announcement, July 31, 2026.' },
+      { label: 'Added at 1.0.19', value: '19 artifacts, 7 tablets, 3 Miracles', evidence: 'Bundled into the July 31, 2026 launch announcement.' },
       { label: 'Related systems', value: 'Weapons + animal synergies', evidence: 'Listed as part of the game’s build combinations.' },
     ],
     sections: [
@@ -45,6 +47,18 @@ const guides: Record<'artifacts' | 'bosses' | 'coop', TopicGuide> = {
         paragraphs: [
           'Artifacts and tablets are two of the confirmed build layers alongside weapon branches and animal synergies. They are designed to be considered together during a run rather than as a standalone ranking list.',
           'The public figures establish the size of the system, but they do not establish which individual items are strongest. A useful wiki must keep those two kinds of claims separate.',
+        ],
+      },
+      {
+        title: 'Documented artifact and tablet mechanics (official patch notes)',
+        paragraphs: ['Individual mechanics are named in TEAM HORAY’s Steam patch notes often enough to document the systems, even though a full item catalogue is not public. The following are stated directly in those notes:'],
+        items: [
+          'Mystic Pot (update 0.10.10, January 23, 2026): insert artifacts into the pot to create a Tablet. The pot occasionally appears in hidden rooms or as a combat reward during exploration.',
+          'Tablet Combiner (update 0.10.14, February 2026): a random exploration object that can synthesize Tablets.',
+          'Destiny Inscription unlocks (update 0.10.14): the six artifacts added in that update are unlocked through Destiny Inscription.',
+          'Named artifacts in patch notes include the Chalcedony Key, the Absolute Ring, the Bucket of Plump Berries, Rylie’s Pocket Watch (reduces Grimoire MP Cost), the Glowing Hourglass, and the Academy Fountain Pen (scales Grimoire Damage with Evasion).',
+          'Item combos (update 0.10.10): the Elemental combo is a support combo that enhances the highest elemental attribute; the combo system was overhauled in October 2025.',
+          'Wish Fountain (update 0.10.0): base capacity rose from 3 to 4, and the Talent “Willpower” modifies its maximum capacity.',
         ],
       },
       {
@@ -62,7 +76,7 @@ const guides: Record<'artifacts' | 'bosses' | 'coop', TopicGuide> = {
         paragraphs: ['An artifact tier list needs a complete item list, exact effects, version context, and repeatable test conditions. Those details were not established by the official sources reviewed for this page. Until they are, a transparent research hub is more useful than fabricated rankings.'],
       },
     ],
-    limits: ['Individual artifact and tablet names', 'Effects, rarities, drop locations, and numeric values', 'Guaranteed combinations or best-in-slot rankings'],
+    limits: ['A complete artifact and tablet catalogue (only patch-note-named examples are documented)', 'Most individual effects, rarities, drop locations, and numeric values', 'Guaranteed combinations or best-in-slot rankings'],
     related: [
       { href: '/weapons', label: 'Weapons & upgrades', description: 'Use the confirmed six-branch / 200+ upgrade scope to frame a build note.' },
       { href: '/weapons/grimoire', label: 'Build planning', description: 'Keep artifacts, tablets, weapon choices, and test conditions together.' },
@@ -115,18 +129,30 @@ const guides: Record<'artifacts' | 'bosses' | 'coop', TopicGuide> = {
     eyebrow: 'Online co-op · confirmed scope',
     title: 'Sephiria Co-op: Up to 4 Players',
     description: 'Verified Sephiria online co-op scope and a practical coordination checklist, without unsupported claims about matchmaking, cross-play, or party roles.',
-    answer: 'Sephiria supports online co-op for up to four players. The official sources reviewed for this page do not establish matchmaking rules, invite flow, cross-play, shared progression, difficulty scaling, or fixed team roles, so those details are deliberately left unclaimed.',
+    answer: 'Sephiria supports online co-op for up to four players. The official store description and the developer’s 1.0 announcement both confirm that teammates can trade items and revive fallen companions while exploring the tower together. Matchmaking rules, cross-play, shared progression, and difficulty scaling are not documented in official sources, so those details are deliberately left unclaimed.',
     confirmed: [
       { label: 'Online co-op', value: 'Up to 4 players', evidence: 'Published store feature.' },
+      { label: 'Item trading', value: 'Confirmed', evidence: 'Steam store description and 1.0 launch announcement.' },
+      { label: 'Reviving teammates', value: 'Confirmed', evidence: 'Steam store description: “revive fallen companions”.' },
+      { label: 'Platforms', value: 'Windows and macOS', evidence: 'Steam store platform listing, checked October 21, 2026.' },
       { label: 'Build layers', value: 'Weapons, artifacts, tablets, animal synergies', evidence: 'Published game systems.' },
-      { label: 'Modes', value: 'Hard Mode: 60 levels', evidence: 'Published game-content total.' },
     ],
     sections: [
       {
         title: 'What “up to four players” confirms',
         paragraphs: [
-          'The verified claim is the maximum online co-op party size. It does not by itself confirm how players join, whether play supports cross-platform parties, or how rewards and progression are handled.',
+          'The verified claim is the maximum online co-op party size, together with two party mechanics the developer states directly: trading items between teammates and reviving fallen companions. It does not by itself confirm how players join, whether play supports cross-platform parties, or how rewards and progression are handled.',
           'Check the Steam store page and developer announcements immediately before organizing a session, because platform support and online features are time-sensitive details.',
+        ],
+      },
+      {
+        title: 'Multiplayer details from official patch notes',
+        paragraphs: ['TEAM HORAY’s patch notes document how co-op behaves in practice, including its limits:'],
+        items: [
+          'Chapter progress matters for invites: update 1.0.24 (August 7, 2026) fixed cases where players with mismatched chapter progress could be invited, and a separate fix stopped players from clearing the game through another player’s Chapter 6 lobby while still progressing Chapter 5.',
+          'Early Access supporters receive a badge shown in multiplayer, per the 1.0 launch announcement.',
+          'Lobby names are limited to 64 characters when creating a lobby (update 1.0.30, August 20, 2026).',
+          'Update 1.0.24 added Steam Rich Presence support, and multiplayer sessions include story events such as the Chapter 6 earthquake sequence (update 1.0.22).',
         ],
       },
       {
@@ -144,7 +170,7 @@ const guides: Record<'artifacts' | 'bosses' | 'coop', TopicGuide> = {
         paragraphs: ['A reliable co-op guide needs explicit confirmation of lobby or invite behavior, platform compatibility, progression ownership, revive rules, disconnect handling, and multiplayer scaling. Those claims are not added until a current official source supports them.'],
       },
     ],
-    limits: ['Cross-play, matchmaking, invite, and lobby behavior', 'Progression, rewards, revive, and disconnect rules', 'Party roles, recommended compositions, and multiplayer scaling values'],
+    limits: ['Cross-play and matchmaking rules', 'Progression and reward ownership between party members', 'Party roles, recommended compositions, and multiplayer scaling values'],
     related: [
       { href: '/artifacts', label: 'Artifacts & tablets', description: 'Capture build choices per player before comparing a co-op result.' },
       { href: '/bosses', label: 'Boss research hub', description: 'Use the same version and party-size record for encounter reports.' },
@@ -164,7 +190,7 @@ export function TopicGuidePage({ topic, locale = 'en' }: { topic: keyof typeof g
         <div className="eyebrow">{guide.eyebrow}</div>
         <h1 className="display-title"><span>{guide.title}</span></h1>
         <p className="hero-copy">{guide.description}</p>
-        <p className="article-meta">Last verified: October 14, 2026 · Sources are listed below.</p>
+        <p className="article-meta">Last verified: October 21, 2026 · Sources are listed below.</p>
       </div>
 
       <div className="article-layout">

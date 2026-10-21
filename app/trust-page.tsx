@@ -2,7 +2,7 @@ import { WikiShell } from '@/components/wiki-shell'
 import { getCopy } from '@/lib/content'
 import { type Locale } from '@/lib/locales'
 
-export type TrustPageKind = 'about' | 'editorial-policy'
+export type TrustPageKind = 'about' | 'editorial-policy' | 'contact'
 
 const content = {
   about: {
@@ -14,6 +14,11 @@ const content = {
     eyebrow: 'Editorial standards',
     title: 'Research & Editorial Policy',
     description: 'How Sephiria Wiki checks sources, labels uncertainty, updates pages, and handles corrections.',
+  },
+  contact: {
+    eyebrow: 'Contact',
+    title: 'Contact Sephiria Wiki',
+    description: 'How to report a correction, suggest a source, or reach the official Sephiria channels for game support.',
   },
 } satisfies Record<TrustPageKind, { eyebrow: string; title: string; description: string }>
 
@@ -30,7 +35,15 @@ export function TrustPage({ kind, locale = 'en' }: { kind: TrustPageKind; locale
         <p className="article-meta">Last reviewed: October 14, 2026</p>
       </div>
       <article className="article-content">
-        {kind === 'about' ? <>
+        {kind === 'contact' ? <>
+          <h2>Corrections and source suggestions</h2>
+          <p>Sephiria Wiki is maintained by an independent editor, and corrections from readers are welcome. The fastest way to reach the site is the public issue tracker for this website on GitHub: <a href="https://github.com/bkrcq/Sephiria_wiki_demo/issues" target="_blank" rel="noreferrer">github.com/bkrcq/Sephiria_wiki_demo/issues</a>. A useful correction report includes the page address, the exact statement that looks wrong, and a link to the primary source (a Steam announcement, the official website, or a developer post) that supports the change.</p>
+          <p>Reports are checked against the source hierarchy in the <a href="/editorial-policy">editorial policy</a> before a page changes. When a correction is accepted, the page is updated and its review date is moved forward; when a claim cannot be verified either way, the page keeps the detail labeled unconfirmed instead of guessing.</p>
+          <h2>Game support and bug reports</h2>
+          <p>This site is a fan guide, not the developer. For game bugs, crashes, account or purchase problems, contact TEAM HORAY through official channels: the <a href="https://steamcommunity.com/app/2436940/" target="_blank" rel="noreferrer">Steam Community hub</a>, the official Discord server linked from the developer&rsquo;s Steam announcements (discord.gg/g7AaeBuyMV), or the developer bug-report email published in the official patch notes, team.horay.game@gmail.com. Log files and game-version details help the developer reproduce a problem; the official 0.10.0 patch notes list the log file locations.</p>
+          <h2>What this site does not collect</h2>
+          <p>Sephiria Wiki has no accounts, no comment system, and no contact form, and it does not ask readers for personal data. Contacting the site through GitHub is handled under GitHub&rsquo;s own privacy policy. See the <a href="/privacy">privacy policy</a> for the full statement.</p>
+        </> : kind === 'about' ? <>
           <h2>Independent fan resource</h2>
           <p>Sephiria Wiki is an independent, unofficial guide project for the game Sephiria. It is not affiliated with TEAM HORAY, Valve, Steam, Nintendo, or any platform holder. Game names, artwork, and trademarks belong to their respective owners.</p>
           <h2>What this site is for</h2>
@@ -68,7 +81,7 @@ export function TrustPage({ kind, locale = 'en' }: { kind: TrustPageKind; locale
           <h2>Update frequency and corrections</h2>
           <p>Guides are re-checked when an official announcement or patch changes the answer, and expanded pages show their own last-updated date. The About page carries a dated update log. When a source proves an earlier page wrong or incomplete, the page is corrected and its review date is updated rather than silently rewritten.</p>
           <h2>Contact and corrections</h2>
-          <p>A public corrections contact should be added before accepting player submissions or publishing community-sourced data. Until then, the site limits claims to information that can be traced to the source links shown on each page.</p>
+          <p>Corrections and source suggestions are collected on the <a href="/contact">contact page</a>. Player submissions and community-sourced data are only published after they can be traced to a primary source or reproducible evidence, following the hierarchy above.</p>
         </>}
       </article>
     </div>
