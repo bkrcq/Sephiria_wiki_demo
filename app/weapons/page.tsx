@@ -2,8 +2,8 @@
 import { pageMetadata } from '@/lib/seo'
 
 export const metadata = pageMetadata({
-  title: 'Sephiria Weapons & Upgrades Guide – All Branches',
-  description: 'All Sephiria weapons: 6 branches, 200+ upgrades, stats and build recommendations. Complete Sephiria weapons and upgrades guide.',
+  title: 'Sephiria Weapons Guide: 6 Branches & 200+ Upgrades Compared',
+  description: 'Compare Sephiria\'s 6 weapon branches and 200+ upgrades on range, speed and damage style — plus a fixed test protocol for choosing your branch.',
   path: '/weapons',
   keywords: ['Sephiria weapons', 'Sephiria weapon upgrades', 'Sephiria weapon branches', 'Sephiria upgrades'],
 })

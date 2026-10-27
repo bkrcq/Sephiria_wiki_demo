@@ -161,8 +161,8 @@ export const keywordPages: KeywordPage[] = [
     "slug": "sephiria-switch",
     "category": "platforms",
     "updatedAt": "2026-10-21",
-    "title": "Is Sephiria on Nintendo Switch? Release Date & Status",
-    "description": "Is Sephiria coming to Nintendo Switch? No official Switch version or release date announced yet — check the latest status, platform list and FAQ.",
+    "title": "Is Sephiria on Nintendo Switch? Status, Rumors & Switch-Only Options",
+    "description": "No official Switch version or date yet — but see which rumors to ignore, how to spot a real announcement, and what Switch-only players can do now.",
     "answer": "No Nintendo Switch version or release date has been announced. The official Steam listing checked on October 21, 2026 confirms Sephiria for Windows and macOS only, and does not list Switch.",
     "aliases": ["sephiria nintendo switch", "sephiria switch release date", "is sephiria on switch", "sephiria console", "sephiria console release", "sephiria game switch", "sephiria switch 2", "sephiria mobile"],
     "faqs": [

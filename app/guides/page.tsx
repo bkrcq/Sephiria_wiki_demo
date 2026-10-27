@@ -2,8 +2,8 @@
 import { pageMetadata } from '@/lib/seo'
 
 export const metadata = pageMetadata({
-  title: 'Sephiria Guides — Beginner, Builds, Bosses & Co-op',
-  description: 'Browse Sephiria guides built from supplied research, with one page per search topic, official source links, direct answers, and clearly marked unconfirmed details.',
+  title: 'Sephiria Wiki: All Guides — Beginner, Builds, Bosses & Co-op',
+  description: 'All Sephiria guides in one place: beginner basics, build planning, bosses and co-op — answers checked against official sources, unknowns marked.',
   path: '/guides',
   keywords: ['Sephiria guides', 'Sephiria wiki', 'Sephiria facts'],
 })
