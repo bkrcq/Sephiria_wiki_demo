@@ -4,13 +4,13 @@ import { SITE_URL } from '@/lib/seo'
 
 const staticPaths = ['', '/weapons', '/weapons/grimoire', '/artifacts', '/bosses', '/coop', '/guides', '/about', '/editorial-policy', '/contact', '/privacy', '/terms']
 const lastModifiedByPath: Record<string, Date> = {
-  '': new Date('2026-10-14T00:00:00.000Z'),
-  '/guides': new Date('2026-10-14T00:00:00.000Z'),
-  '/weapons': new Date('2026-10-14T00:00:00.000Z'),
-  '/weapons/grimoire': new Date('2026-10-14T00:00:00.000Z'),
-  '/artifacts': new Date('2026-10-14T00:00:00.000Z'),
+  '': new Date('2026-10-21T00:00:00.000Z'),
+  '/guides': new Date('2026-10-21T00:00:00.000Z'),
+  '/weapons': new Date('2026-10-21T00:00:00.000Z'),
+  '/weapons/grimoire': new Date('2026-10-21T00:00:00.000Z'),
+  '/artifacts': new Date('2026-10-21T00:00:00.000Z'),
   '/bosses': new Date('2026-10-14T00:00:00.000Z'),
-  '/coop': new Date('2026-10-14T00:00:00.000Z'),
+  '/coop': new Date('2026-10-21T00:00:00.000Z'),
   '/about': new Date('2026-10-14T00:00:00.000Z'),
   '/editorial-policy': new Date('2026-10-14T00:00:00.000Z'),
   '/contact': new Date('2026-10-21T00:00:00.000Z'),

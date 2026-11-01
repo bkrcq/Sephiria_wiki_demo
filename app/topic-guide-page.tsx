@@ -180,6 +180,12 @@ const guides: Record<'artifacts' | 'bosses' | 'coop', TopicGuide> = {
   },
 }
 
+const worksheetFields: Record<keyof typeof guides, string[]> = {
+  artifacts: ['Artifact / tablet name exactly as displayed', 'Stated effect text and screenshot', 'Inventory arrangement before / after', 'Weapon branch and upgrade order', 'Version / chapter / mode / party size', 'Observed outcome and alternative explanation'],
+  bosses: ['Encounter name as displayed / chapter', 'Version / mode / party size', 'Weapon / artifacts / tablets', 'Observed action with clip timestamp', 'Your response and actual outcome', 'Reward actually shown / repeat attempt'],
+  coop: ['Players and party size (up to 4)', 'Version on each player’s game', 'Chapter progress recorded by each player', 'Session goal and who records evidence', 'Observed result / disconnect or other issue', 'Source or screenshot for unresolved compatibility question'],
+}
+
 export function TopicGuidePage({ topic, locale = 'en' }: { topic: keyof typeof guides; locale?: Locale }) {
   const copy = getCopy(locale)
   const guide = guides[topic]
@@ -198,6 +204,7 @@ export function TopicGuidePage({ topic, locale = 'en' }: { topic: keyof typeof g
           <section className="topic-answer" aria-label="Direct answer"><h2>Quick answer</h2><p>{guide.answer}</p></section>
           <section><h2>Confirmed scope</h2><table className="data-table"><thead><tr><th>Area</th><th>Confirmed information</th><th>Evidence</th></tr></thead><tbody>{guide.confirmed.map((fact) => <tr key={fact.label}><td>{fact.label}</td><td><strong>{fact.value}</strong></td><td>{fact.evidence}</td></tr>)}</tbody></table></section>
           {guide.sections.map((section) => <section key={section.title}><h2>{section.title}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.items && <ul>{section.items.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
+          <section><h2>{topic === 'coop' ? 'Party session record' : topic === 'bosses' ? 'Encounter evidence card' : 'Item interaction comparison card'}</h2><p>Copy this blank card for your own observations. Fields are prompts, not confirmed mechanics or a recommended loadout. Keep unknown values blank.</p><table className="data-table"><thead><tr><th>Record</th><th>Your entry</th><th>Evidence / retest</th></tr></thead><tbody>{worksheetFields[topic].map((field) => <tr key={field}><td>{field}</td><td>________</td><td>________</td></tr>)}</tbody></table><p>{topic === 'coop' ? 'A four-player limit does not establish cross-play, shared progression, or disconnect recovery. Record those only when a source or your own documented session supports the specific observation.' : topic === 'bosses' ? 'Keep an observed move separate from a claimed universal pattern. Leave rewards blank unless shown; this card supplies no boss names, timings, or weaknesses.' : 'If several pickups or placements changed, retain all differences before attributing a result to one item. This card supplies no drop rate, acquisition route, or best combination.'}</p></section>
           <section className="research-limits"><h2>Not yet verified</h2><p>The following detail is intentionally excluded from this page until it can be supported by a current primary source:</p><ul>{guide.limits.map((item) => <li key={item}>{item}</li>)}</ul></section>
           <section><h2>Continue your research</h2><div className="related-topic-grid">{guide.related.map((item) => <Link className="related-topic" href={item.href} key={item.href}><h3>{item.label}</h3><p>{item.description}</p></Link>)}</div></section>
         </article>

@@ -4,6 +4,7 @@ import type { Locale } from './locales'
 type MdxComponent = ComponentType
 
 const englishLoaders: Record<string, () => Promise<{ default: MdxComponent }>> = {
+  'sephiria-release-evidence-sheet': () => import('@/content/en/keywords/sephiria-release-evidence-sheet.mdx'),
   'sephiria-guide': () => import('@/content/en/keywords/sephiria-guide.mdx'),
   'sephiria-wiki': () => import('@/content/en/keywords/sephiria-wiki.mdx'),
   'sephiria-weapons': () => import('@/content/en/keywords/sephiria-weapons.mdx'),

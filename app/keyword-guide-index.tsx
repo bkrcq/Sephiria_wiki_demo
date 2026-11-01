@@ -31,9 +31,9 @@ export function KeywordGuideIndex({ locale }: { locale: Locale }) {
       </div>
       <section className="keyword-group keyword-priority" aria-labelledby="priority-guides-heading">
         <SectionHeading>Priority reading</SectionHeading>
-        <h2 className="section-title gradient-title" id="priority-guides-heading">High-opportunity search topics</h2>
-        <p className="hero-copy">These guides are linked first because they already match recurring Search Console queries or sit close to the first page. Use the descriptive links below to move between the most useful starting points.</p>
-        <div className="card-grid keyword-grid">{priorityGuides.map((guide) => <Link className="wiki-card" href={localePath(locale, guide.href)} key={guide.href}><div className="card-number">{guide.number}</div><h2 className="card-title">{guide.label}</h2><p className="card-copy">{guide.description}</p></Link>)}</div>
+        <h2 className="section-title gradient-title" id="priority-guides-heading">Player tools and source records</h2>
+        <p className="hero-copy">Start with platform questions, chapter progression, or a build worksheet. The library below contains only the indexable guides; consolidated and research-only pages are excluded.</p>
+        <div className="card-grid keyword-grid">{priorityGuides.filter((guide) => !guide.href.startsWith('/guides/') || isKeywordIndexable(guide.href.slice('/guides/'.length))).map((guide) => <Link className="wiki-card" href={localePath(locale, guide.href)} key={guide.href}><div className="card-number">{guide.number}</div><h2 className="card-title">{guide.label}</h2><p className="card-copy">{guide.description}</p></Link>)}</div>
       </section>
       {grouped.map(([category, pages]) => <section className="keyword-group" key={category}>
         <SectionHeading>{category}</SectionHeading>

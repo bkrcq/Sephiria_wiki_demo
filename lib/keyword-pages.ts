@@ -40,6 +40,29 @@ export function isKeywordIndexable(slug: string) {
 }
 export const keywordPages: KeywordPage[] = [
   {
+    "keyword": "sephiria release evidence sheet",
+    "slug": "sephiria-release-evidence-sheet",
+    "category": "tools",
+    "updatedAt": "2026-10-21",
+    "title": "Sephiria Release & Purchase Evidence Sheet",
+    "description": "Compare Sephiria’s dated 1.0 release, Steam price change, and review snapshot with a reusable purchase decision card.",
+    "answer": "Keep three dates separate: the July 31, 2026 full release, the September 14 base-price rise to $17.99, and the October 21 Steam review snapshot. Use the decision card to record your own price, source version, and unresolved requirements.",
+    "faqs": [
+      {
+        "question": "Is $17.99 a guaranteed current price?",
+        "answer": "No. It is the base price in the recorded September 14, 2026 change; check your own storefront for a purchase quote."
+      },
+      {
+        "question": "Does 95% prove reviews improved from 93%?",
+        "answer": "No. The recorded all-time and recent-review figures use different windows."
+      },
+      {
+        "question": "Does patch 1.0.33 mean no later patches exist?",
+        "answer": "No. It is the limit of the verified patch record used here, not a new search for later updates."
+      }
+    ]
+  },
+  {
     "keyword": "sephiria guide",
     "slug": "sephiria-guide",
     "category": "guide",
